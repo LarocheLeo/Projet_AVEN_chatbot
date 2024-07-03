@@ -1,0 +1,639 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.btn {
+    margin: auto;
+}
+
+
+/* apropos */
+.apropos {
+    background-color: var(--gris-clair);
+    max-width: 100vw;
+    padding: 18vh 20vh;
+}
+
+.apropos-container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+h1 {
+    display: flex;
+    font-size: 64px;
+    margin-bottom: 5vh;
+    /* margin-top: 10vh; */
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    margin-bottom: 8vh;
+}
+
+.apropos p {
+    font-size: 20px;
+}
+
+.images {
+    width: 50%;
+    text-align: center;
+}
+
+.images img {
+    transform: scale(1.2);
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* section services */
+.services {
+    padding: 15vh 20vh;
+}
+
+.services h2 {
+    margin-bottom: 100px;
+}
+
+.services-container {
+    margin-top: 5vh;
+}
+
+.box {
+    padding: 5vh;
+    min-width: 45%;
+    max-width: 45%;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+.titre-trait h3 {
+    font-size: 30px;
+}
+
+.titre-icon {
+    height: 15vh;
+}
+
+.trait {
+    width: 4vw;
+    height: 0.6vh;
+    background-color: var(--violet);
+    border-radius: 16px;
+    margin-top: 3vh;
+    margin-left: 2vh ;
+}
+
+.box p {
+    min-height: 16vh;
+    margin: 3vh 0;
+}
+
+.services p {
+    font-size: 20px;
+}
+
+.btn-savoir {
+    background-color: var(--secondaire);
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-savoir:hover {
+    background-color: white;
+    color: var(--secondaire);
+    border: 2px solid var(--secondaire);
+}
+
+
+/* partenaire */
+.partenaire {
+    background-color: var(--gris-clair);
+    padding: 15vh 20vh;
+}
+
+.partenaire h2 {
+    margin-bottom: 100px;
+}
+
+.partenaire-container {
+    margin-top: 5vh;
+    display: flex;
+}
+
+.partenaire-container p {
+    /* max-width: 50%; */
+    margin: 10vh 0;
+    font-size: 24px;
+    /* padding: 0 5vw; */
+}
+
+.partenaire-container img {
+    max-width: 35%;
+}
+
+
+/* equipe */
+.equipe {
+    padding: 15vh 20vh;
+}
+
+.equipe h2 {
+    margin-bottom: 50px; 
+}
+
+.equipe-container {
+    margin-top: 5vh;
+    padding: 0 20vw;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.equipe h3 {
+    margin: 50px 0; 
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-direction: column; 
+    margin: 0 10px;
+    margin-top: 20px; 
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.team h4 {
+    margin-top: 10px;
+    font-size: 24px; 
+}
+
+.team img {
+    max-width: 15vw;
+}
+
+
+/* Contact */
+.contact {
+    background-color: var(--gris-clair);
+    padding: 15vh 20vh;
+}
+
+.contact h2 {
+    margin-bottom: 50px; 
+}
+
+.lieu {
+    text-align: center;
+    height: 28vh;
+}
+
+.reseaux, .adresse {
+    width: 50%;
+    height: 100%;
+    padding: 3%;
+    background-color: white;
+}
+
+.adresse p {
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.logo-reseaux img {
+    width: 4vw;
+    height: auto;
+    padding: 2%;
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+}
+
+.logo-reseaux  {
+    margin-top: 3vh;
+}
+
+.logo-reseaux p {
+    margin: 1vh 0;
+    font-size: 20px;
+}
+
+.logo-reseaux img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.form-carte {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 10vh;
+    height: auto;
+}
+
+.form {
+    background-color: white;
+    width: 50%;
+    height: auto;
+    padding: 3%;
+}
+
+.form h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.form input,
+.form textarea {
+    background-color: var(--gris-clair);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form textarea {
+    height: 100px;
+}
+
+.form form {
+    margin-top: 5vh;
+}
+
+.form ::placeholder {
+    color: black;
+}
+
+.btn-form {
+    background-color: var(--secondaire);
+    color: white;
+    border: 2px solid white;
+    margin-left:27.5%;
+    margin-top: 2vh;
+}
+
+.btn-form:hover {
+    background-color: white;
+    color: var(--secondaire);
+    border: 2px solid var(--secondaire);
+}
+
+.carte {
+    width: 50%;
+    /* height: 75vh; */
+    height: auto;
+}
+
+.carte iframe {
+    width: 100%;
+    height: 100%;
+    /* height: 75vh; */
+}
+
+
+
+
+/* media queries */
+@media screen and (max-width: 1400px) {
+    /* padding de la page */ 
+    .services, .partenaire, .equipe, .contact {
+        padding: 10vh 10vw;
+    }
+
+    /* apropos */
+    .images {
+        width: 60%;
+    }
+
+    /* services */
+    .icon-services {
+        max-width: 10vw;
+        min-width: 10vw;
+        height: auto;
+    }
+
+    .services-container {
+        padding: 0 !important;
+    } 
+    
+    .titre-trait h3 {
+        font-size: 28px;
+    }
+
+    /* contact */
+    .lieu {
+        height: 22vh;
+    }
+
+    .form, .carte, .carte iframe {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .btn {
+        font-size: 14px;
+    }
+
+    /* apropos */
+    .apropos {
+        padding: 20vh 10vw 10vh 10vw;
+    }
+    
+    /* services */
+    .services {
+        padding: 10vh 10vw;
+    }
+
+    .icon-services {
+        max-width: 8vw;
+        max-height: 8vh;
+        min-width: 8vw;
+        min-height: 8vh;
+    }
+
+    .box p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .titre-icon {
+        height: 12vh;
+    }
+
+    .titre-trait h3 {
+        font-size: 24px;
+    }
+
+    /* partenaire */
+    .partenaire-container p {
+        font-size: 20px;
+    }
+
+    /* equipe */
+    .team h4 {
+        font-size: 20px; 
+    }
+
+    /* contact */
+    .logo-reseaux p, .adresse p {
+        font-size: 16px;
+    }
+
+    .adresse p {
+        margin-top: 12%;
+    }
+
+    .lieu {
+        height: 20vh;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .contact {
+        padding: 10vh 10vw 15vw 10vw
+    }
+
+
+    .btn {
+        font-size: 16px;
+    }
+    
+    /* apropos */
+    .images {
+        width: 70%;
+    }
+
+    /* services */
+    .box {
+        min-width: 80%;
+        max-width: 80%;
+        margin: 10%;
+    }
+
+    .box-1 {
+        margin-top: 0;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .icon-services {
+        max-width: 12vw;
+        min-width: 12vw;
+        min-height: 10vh;
+        max-height: 10vh;
+    }
+    
+    .titre-trait h3 {
+        font-size: 28px;
+    }
+
+    .trait {
+        width: 8vw;
+    }
+
+    .box p {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    /* contact */
+    .lieu {
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+    }
+
+    .adresse p {
+        margin-top: 5%;
+    }
+    
+    .reseaux, .adresse {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .form-carte {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form, .carte, .carte iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .carte, .carte iframe {
+        height: 30vh;
+    }
+
+    .btn-form {
+        margin-left: 32.5%;
+    }
+
+    .form .btn, .btn-savoir {
+        width: 25vw !important;
+    }
+
+    .btn-form {
+        margin-bottom: 2vh;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px !important;
+    }
+
+    .apropos p, .team h4, .services-container p, .partenaire-container p, .lieu p {
+        font-size: 18px;
+    }
+
+    .box {
+        height: auto;
+    }
+
+    /* services */    
+    .icon-services {
+        max-width: 12vw;
+        min-width: 12vw;
+        min-height: 10vh;
+        max-height: 10vh;
+    }
+
+    .icon-services {
+        max-width: 12vw;
+        max-height:10vh;
+        min-width: 12vw;
+        min-height: 10vh;
+    }
+
+    /* partenaire */    
+    .partenaire-container p {
+        max-width: 100%;
+    }
+
+    .partenaire-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .partenaire-container img {
+        margin: auto;
+    }
+
+    /* contact */
+
+    .logo-reseaux {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .logo-reseaux > div {
+        width: 48%; 
+        margin-bottom: 20px; 
+    }
+
+    .logo-reseaux img {
+        width: 25%;
+    }
+    
+    .reseaux {
+        height: 40vh;
+    }
+
+    .lieu {
+        margin-bottom: 20%;
+    }
+
+    
+}
+
+@media screen and (max-width: 576px) {
+    /* padding de la page */ 
+    .services, .partenaire, .equipe, .contact {
+        padding: 10vh 5vw;
+    }
+    
+    h1 {
+        font-size: 35px;
+        padding-top: 3vh;
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px !important;
+    }
+
+    .apropos p, .team h4, .services-container p, .partenaire-container p, .lieu p {
+        font-size: 16px;
+    }
+
+    .icon-services {
+        display: none;
+    }
+
+    .btn {
+        font-size: 14px;
+        margin-top: 1vh;
+    }
+
+    .btn-form {
+        margin-left: 27.5%;
+    }
+
+    .form .btn, .btn-savoir {
+        width: 40vw !important;
+        height: 5vh !important;
+    }
+
+    .trait {
+        width: 10vw;
+    }
+
+    .team img {
+        max-width: 20vw;
+        width: 20vw;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    /* apropos */
+    h1 {
+        padding-top: 2vh;
+        font-size: 30px;
+    }
+}

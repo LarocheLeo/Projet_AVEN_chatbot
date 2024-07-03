@@ -1,0 +1,86 @@
+{
+    "title": "Welcome",
+    "home": "Home",
+    "about": "About",
+    "resources": "Resources",
+    "privacy_policy": "Privacy Policy",
+    "legal_notice": "Legal notice",
+    "search_placeholder": "Search...",
+
+    "access_lang": "Change the writing",
+    "access_contrast": "Change the contrast",
+
+    "presentation": "Discover a multitude of <span class='fw-semibold color_v'>resources</span> carefully crafted to support you in developing your <span class='color_v fw-semibold'>digital skills.</span> <br><br>They will enable you to navigate with ease and confidence through the ever-evolving technological landscape, while providing you with the necessary tools to tackle <span class='color_v fw-semibold'>digital challenges</span> with confidence and success.",
+    "resources_btn": "Access the resources",
+    "about_btn": "About",
+
+    "slogan": "The digital reference for navigating towards online inclusion",
+
+    "mission": "What is our <span class='color_v'>mission</span>?",
+    "mission_description": "We are committed to making the digital world accessible to everyone.<br><br>Discover a multitude of resources and tutorial videos to enhance your digital skills. From theory to practice, our platform offers detailed guides and practical scenarios.<br><br><span class='color_v fw-bold'>Our mission</span>: to support everyone towards confident digital mastery, for a prosperous and inclusive future.",
+
+
+    "tuto_title":"Featured <span class='color_v'>tutorials</span>",
+    "administrative_cat": "Administrative",
+    "com_cat": "Communication",
+    "education_cat": "Education",
+    "health_cat": "Health",
+    "internet_cat": "Internet",
+    "security_cat": "Security",
+
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, recusandae. <br><a href='#' class='text-primary text-decoration-underline exclude-accessibility'>Read more</a>",
+
+
+    "img_sante_doctolib": "./assets/images/miniatures_en/health/minia_doctolib.png",
+    "doctolib_rdv_title": "Book an appointment on Doctolib",
+
+    "img_mdp_create": "./assets/images/miniatures_en/security/minia_crea_mdp.png",
+    "mdp_create_title": "Create a password",
+
+    "img_parcoursup": "./assets/images/miniatures_en/education/minia_parcoursup.png",
+    "parcoursup_title": "Use Parcoursup",
+
+    "img_google_create": "./assets/images/miniatures_en/internet/minia_crea_google.png",
+    "google_create_title": "Create a Google account",
+
+
+
+
+    "about_title": "Who are we?",
+    "about_pre": "We support individuals in <span class='fw-semibold color_v'>exploring</span> and <span class='fw-semibold color_v'>mastering</span> digital tools by providing educational resources <span class='fw-semibold color_v'>accessible to everyone</span>. We aim to <span class='fw-semibold color_v'>raise awareness</span>, <span class='fw-semibold color_v'>empower</span> and <span class='fw-semibold color_v'>support</span> everyone in developing essential digital skills, in collaboration with partners such as <span class='fw-semibold color_v'>AGEFIPH</span>, to promote their active participation in modern society.",
+    
+    "about_services": "What are our <span class='color_v'>services</span>?",
+    "about_video": "Video tutorials",
+    "about_video_details": "We offer tutorials covering a wide range of topics from basic computer skills to more advanced competencies.",
+
+    "about_resources_details": "We provide resources such as practical guides, technical sheets, and templates for self-paced and practical learning.",
+
+    "know_more_button": "Learn more",
+
+    "partenaire": "Our <span class='color_v'>collaboration</span>",
+    "partenaire_details": "<p class='fw-medium'>AGEFIPH's mission is to promote digital accessibility for all.<br><br>As an organization committed to the professional inclusion of people with disabilities, AGEFIPH provides valuable expertise and specific resources to help overcome the obstacles related to digital illiteracy among people with disabilities.</p>",
+      
+
+    "equipe": "Our <span class='color_v'>team</span>",
+    "litis": "LITIS Laboratory",
+    "agefiph": "AGEFIPH",
+    "iut": "University of Rouen / IUT of Rouen",
+
+    "contact": "Contact <span class='color_v'>us</span>",
+    "follow": "Follow us",
+    "lieu": "Location",
+    "form": "Contact form",
+    "name_label": "Enter your first name:",
+    "example_name": "Example: Julien",
+
+    "mail_label": "Enter your email address:",
+    "example_mail": "Example: julien.dubois@gmail.com",
+
+    "object_label": "Enter the subject of your request:",
+    "example_object": "Example: Display error on the site",
+
+    "message_label": "Enter your message:",
+
+    "submit_btn": "Submit"
+}
+  

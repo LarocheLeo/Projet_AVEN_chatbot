@@ -1,0 +1,537 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.dys {
+    font-family: 'Open-Dyslexic', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden; 
+}
+
+
+/* presentation */
+
+.presentation {
+    margin-top: 15vh;
+    background-color: var(--gris-clair);
+    max-width: 100vw;
+    padding: 20vh;
+}
+
+.pre-container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.content {
+    width: 70%;
+}
+
+
+.btn-container {
+    padding: 2vh;
+}
+
+.btn {
+    width: 15vw;
+    height: 6vh;
+    border-radius: 64px;
+    transition: 0.5s ease;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-resource {
+    margin-right: 5vw;
+    background-color: var(--secondaire);
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-resource:hover {
+    background-color: white;
+    color: var(--secondaire);
+    border: 2px solid var(--secondaire);
+}
+
+.btn-about {
+    background-color: var(--blanc);
+    color: var(--secondaire);
+    border: 2px solid var(--secondaire);
+}
+
+.btn-about:hover {
+    background-color: var(--secondaire);
+    color: var(--blanc);
+    border: 2px solid var(--blanc);
+}
+
+
+.images {
+    width: 30%;
+    text-align: center;
+    margin-right: 8vw;
+}
+
+.images img {
+    transform: scale(1.2);
+}
+
+
+/* section slogan */
+
+.slogan {
+    min-height: 100vh;
+    position: relative;
+}
+
+.slogan_img {
+    width: 30%;
+}
+
+.slogan_gauche {
+    position: absolute;
+    bottom: -25%;
+    left: -10%;
+    transform: rotate(-15deg);
+}
+
+.slogan .circle {
+    width: 200px;
+    height: 200px;
+    background-color: #F1F1F1;
+    border-radius: 100%;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3);
+    padding-bottom: 3vh;
+    padding-right: 0.5vw;
+    z-index: 999;
+}
+
+.slogan .circle img {
+    transform: scale(1.5);
+}
+
+.slogan .container {
+    background-color: var(--gris-clair);
+    min-height: 50vh;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    line-height: 15vh;
+    z-index: 999;
+}
+
+
+/* section prb */
+.prb {
+    padding: 20vh;
+    background-color: var(--gris-clair);
+}
+
+.prb h2 {
+    margin-bottom: 100px;
+}
+
+.prb-container img {
+    width: 40%;
+    margin-bottom: 100px;
+}
+
+.prb-container p {
+    padding: 0 10vw;
+}
+
+
+/* section tuto */
+
+.tutoriels {
+    padding: 20vh;
+}
+
+.tutoriels h2, .quiz h2 {
+    margin-bottom: 3vh;
+}
+
+.rdv {
+    margin-bottom: 10vh;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tuto {
+    width: calc(33.33% - 2vw);
+    margin-bottom: 5vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tuto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.tuto:hover img {
+    transform: scale(1.05);
+}
+
+.overlay_4 {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    height: 0;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    backdrop-filter: blur(8px) brightness(80%);
+    transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_wrapper:hover .overlay_4 {
+    bottom: 0;
+    height: 100%;
+    transform: scale(1.05);
+}
+
+.text_overlay {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1400px)  {
+
+    /* presentation */
+    .presentation {
+        padding: 15vh;
+    }
+
+    .btn {
+        width: 20vw;
+    }
+
+    /* slogan */
+    .slogan .container {
+        max-width: 80vw;
+    }
+
+    .slogan_img {
+        width: 35%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    /* tutoriel */
+    .tutoriels {
+        padding: 15vh;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* section presentation */
+    .presentation {
+        padding-top: 10vh;
+    }
+
+    .pre-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .images {
+        margin-right: 0;
+        margin-bottom: 10vh;
+    }
+
+    .btn-container {
+        justify-content: center !important;
+    }
+
+    .btn {
+        width: 20vw;
+    }
+
+    /* slogan */
+
+    .slogan .circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .slogan .circle img {
+        transform: scale(1.3);
+    }
+
+    .slogan_img {
+        width: 38%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    /* section prb */
+
+    .prb {
+        padding: 20vh 10vh;
+    }
+
+    /* tutoriel */
+    .tuto {
+        width: calc(50% - 2vw);
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    /* section presentation */
+    .presentation {
+        padding: 10vh;
+    }
+
+    .btn {
+        width: 22vw;
+    }
+
+    /* slogan */
+    .slogan .container {
+        max-width: 75vw;
+    }
+
+    .slogan .circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    .slogan_img {
+        width: 42%;
+    }
+
+    .slogan_gauche {
+        left: -15%;
+    }
+
+    h1 {
+        padding: 0 5vh;
+        line-height: 10vh;
+    }
+
+    /* section prb */
+    .prb {
+        padding: 10vh;
+    }
+
+    .prb .container img {
+        transform: scale(1.2);
+    }
+
+    .prb .container p {
+        padding: 0 5vh;
+    }
+
+    /* tutoriels */
+    .tutoriels {
+        padding: 10vh;
+    }
+
+    .tuto {
+        width: calc(50% - 2vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* section presentation */
+    .presentation {
+        padding: 10vh 11vh;
+    }
+
+    .images img {
+        transform: scale(1.5);
+    }
+
+    .btn {
+        width: 30vw;
+    }
+
+    /* slogan */
+    .slogan .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .slogan_gauche {
+        bottom: -15%;
+    }
+
+    /* section prb */
+    .prb {
+        padding: 10vh 8vh;
+    }
+
+    .prb .container img {
+        transform: scale(1.3);
+        margin-top: 20px;
+    }
+
+    .prb .container p {
+        padding: 0 2vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* section presentation */
+
+    .images img {
+        transform: scale(2);
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 50vw;
+    }
+
+    .btn-resource {
+        margin: 0;
+        margin-bottom: 5vh;
+        margin-top: 2vh;
+    }
+
+    /* slogan */
+    .slogan_img {
+        width: 48%;
+        display: none;
+    }
+
+    .slogan .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 8vh;
+    }
+
+    /* section prb */
+    .prb h2 {
+        text-align: center;
+    }
+
+    /* tutoriels */
+    .tuto {
+        width: calc(100%);
+    }
+
+    .tuto img, .overlay_4 {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    /* presentation */
+    .presentation {
+        padding: 10vh 5vh;
+    }
+
+    .images {
+        margin-top: 5vh;
+        margin-bottom: 7vh;
+    }
+
+    .pre-container .content p {
+        font-size: 1.3rem !important;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center m !important;
+    }
+
+    .btn {
+        width: 60vw;
+    }
+
+    .btn-resource {
+        margin: 0;
+    }
+
+    .btn-about {
+        margin-top: 3vh;
+    }
+
+    /* slogan */
+    .slogan_img {
+        display: none;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .slogan .circle {
+        width: 100px;
+        height: 100px;
+        top: 23%;
+    }
+
+    /* prb */
+    .prb {
+        padding: 10vh 5vh;
+    }
+
+    .prb h2 {
+        font-size: 1.4rem !important;
+    }
+
+    .prb .container p {
+        font-size: 1.3rem !important;
+    }
+
+    /* tutoriels */
+    .tutoriels {
+        padding: 10vh 5vh;
+    }
+}
+
+
+

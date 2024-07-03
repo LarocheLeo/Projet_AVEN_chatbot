@@ -1,0 +1,81 @@
+{
+    "home": "Inicio",
+    "about": "Acerca de",
+    "resources": "Recursos",
+    "privacy_policy": "Política de privacidad",
+    "legal_notice": "Aviso legal",
+    "search_placeholder": "Buscar...",
+
+    "access_lang": "Cambiar escritura",
+    "access_contrast": "Cambiar contraste",
+
+    "presentation": "Descubre una multitud de <span class='fw-semibold color_v'>recursos</span> cuidadosamente elaborados para acompañarte en el desarrollo de tus <span class='color_v fw-semibold'>competencias digitales.</span> <br><br>Te permitirán navegar con facilidad y seguridad a través del paisaje tecnológico en constante evolución, brindándote las herramientas necesarias para enfrentar los <span class='color_v fw-semibold'>desafíos digitales</span> con confianza y éxito.",
+    "resources_btn": "Acceder a los recursos",
+    "about_btn": "Acerca de",
+
+    "slogan": "La referencia digital para navegar hacia la inclusión en línea",
+
+    "mission": "¿Cuál es nuestra <span class='color_v'>misión</span>?",
+    "mission_description": "Nos comprometemos a hacer el mundo digital accesible para todos.<br><br>Descubre una multitud de recursos y videos tutoriales para fortalecer tus competencias digitales. Desde la teoría hasta la práctica, nuestra plataforma ofrece guías detalladas y situaciones concretas.<br><br><span class='color_v fw-bold'>Nuestra misión</span>: acompañar a cada persona hacia un dominio confiado del mundo digital, para un futuro próspero e inclusivo.",
+
+    "tuto_title": "Los <span class='color_v'>tutoriales</span> destacados",
+    "administrative_cat": "Administrativo",
+    "com_cat": "Comunicación",
+    "education_cat": "Educación",
+    "health_cat": "Salud",
+    "internet_cat": "Base de Internet",
+    "security_cat": "Seguridad",
+
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, recusandae. <br><a href='#' class='text-primary text-decoration-underline exclude-accessibility'>Leer más</a>",
+
+    "img_sante_doctolib": "./assets/images/miniatures_es/salud/minia_doctolib.png",
+    "doctolib_rdv_title": "Coger una cita en Doctolib",
+
+    "img_mdp_create": "./assets/images/miniatures_es/seguridad/minia_crea_mdp.png",
+    "mdp_create_title": "Crear una contraseña segura",
+
+    "img_parcoursup": "./assets/images/miniatures_es/educación/minia_parcoursup.png",
+    "parcoursup_title": "Usar Parcoursup",
+
+    "img_google_create": "./assets/images/miniatures_es/internet/minia_crea_google.png",
+    "google_create_title": "Crear una cuenta de Google",
+
+
+
+
+    "about_title": "¿Quiénes somos?",
+    "about_pre": "Acompañamos a las personas en la <span class='fw-semibold color_v'>exploración</span> y el <span class='fw-semibold color_v'>dominio</span> de las herramientas digitales, proporcionando recursos educativos <span class='fw-semibold color_v'>accesibles para todos</span>. Nuestro objetivo es <span class='fw-semibold color_v'>sensibilizar</span>, <span class='fw-semibold color_v'>empoderar</span> y <span class='fw-semibold color_v'>apoyar</span> a todos en el desarrollo de habilidades digitales esenciales, en colaboración con socios como <span class='fw-semibold color_v'>AGEFIPH</span>, para fomentar su participación activa en la sociedad moderna.",
+    
+    "about_services": "¿Cuáles son nuestros <span class='color_v'>servicios</span>?",
+    "about_video": "Tutoriales en vídeo",
+    "about_video_details": "Ofrecemos tutoriales que cubren una amplia gama de temas desde las bases de la informática hasta competencias más avanzadas.",
+
+    "about_resources_details": "Ponemos a disposición recursos como guías prácticas, hojas técnicas y plantillas para un aprendizaje práctico y autónomo a su ritmo.",
+
+    "know_more_button": "Saber más",
+
+    "partenaire": "Nuestra <span class='color_v'>colaboración</span>",
+    "partenaire_details": "<p class='fw-medium'>La misión de AGEFIPH es promover la accesibilidad digital para todos.<br><br>Como una organización comprometida con la inclusión profesional de personas con discapacidades, AGEFIPH ofrece una valiosa experiencia y recursos específicos para ayudar a superar los obstáculos relacionados con el analfabetismo digital entre las personas con discapacidades.</p>",
+
+    "equipe": "Nuestro <span class='color_v'>equipo</span>",
+    "litis": "Laboratorio LITIS",
+    "agefiph": "AGEFIPH",
+    "iut": "Universidad de Rouen / IUT de Rouen",
+
+    "contact": "Contacte <span class='color_v'>con nosotros</span>",
+    "follow": "Síganos",
+    "lieu": "Ubicación",
+    "form": "Formulario de contacto",
+    "name_label": "Ingrese su nombre:",
+    "example_name": "Ejemplo: Julien",
+
+    "mail_label": "Ingrese su dirección de correo electrónico:",
+    "example_mail": "Ejemplo: julien.dubois@gmail.com",
+
+    "object_label": "Ingrese el asunto de su solicitud:",
+    "example_object": "Ejemplo: Error de visualización en el sitio",
+
+    "message_label": "Ingrese su mensaje:",
+
+    "submit_btn": "Enviar"
+}

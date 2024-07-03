@@ -1,0 +1,230 @@
+body {
+    background-color: var(--gris-clair);
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.title {
+    margin-top: 20vh;
+    margin-left: 7vh;
+    
+}
+
+/* ligne */
+
+.underline {
+    height: 5px;
+    border-radius: 16px;
+}
+
+.title_underline {
+    width: 50px;
+    margin-left: 1vw;
+    margin-top: 1.5vh;
+}
+
+/* Vidéo */
+
+.image_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.responsive-iframe-container {
+    position: relative;
+    width: 50vw; 
+    padding-top: 28.125%; /* Format 16:9 (9 / 16 = 0.5625 ou 56.25%) */
+}
+
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* separator */
+
+.bar {
+    width: 50vw;
+    height: 5px;
+    border-radius: 16px;
+    margin: 15vh auto;
+}
+
+/* Couleur des traits */
+.Éducation .underline, .Éducation .bar {
+    background-color: var(--education);
+}
+
+.Communication .underline, .Communication .bar {
+    background-color: var(--communication);
+}
+
+.Administratif .underline, .Administratif .bar {
+    background-color: var(--administratif);
+}
+
+.Santé .underline, .Santé .bar {
+    background-color: var(--sante);
+}
+
+.Sécurité .underline, .Sécurité .bar {
+    background-color: var(--securite);
+}
+
+.Bases_d_internet .underline, .Bases_d_internet .bar {
+    background-color: var(--internet);
+}
+
+/* Étapes */
+.etape {
+    margin-left: 7vh;
+    padding: 5vh;
+    margin-bottom: 10px;
+    max-width: 70%;
+}
+
+.etape h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.etape p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Bouton*/
+.btn-resource {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    background-color: var(--secondaire);
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin-bottom: 10vh;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1400px) {
+    .title {
+        margin-top: 18vh;
+    }
+
+    .etape {
+        margin-left: 5vh;
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .title {
+        margin-top: 16vh;
+    }
+
+    .etape {
+        margin-left: 5vh;
+        max-width: 80%;
+    }
+
+    .responsive-iframe-container {
+        width: 70%;
+        padding-top: 39.375%
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        margin-top: 20vh;
+    }
+
+    .etape {
+        margin-left: 4vh;
+        max-width: 85%;
+    }
+
+    .responsive-iframe-container {
+        width: 75%;
+        padding-top: 42.1875%
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        margin-top: 20vh;
+        margin-left: 4vh;
+    }
+
+    .etape {
+        margin-left: 3vh;
+        max-width: 90%;
+        padding: 4vh;
+    }
+
+    .responsive-iframe-container {
+        width: 80%;
+        padding-top: 45%
+    }
+
+    .btn-resource {
+        margin-bottom: 8vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        margin-top: 20vh;
+        margin-left: 3vh;
+    }
+
+    .etape {
+        margin-left: 3vh;
+        max-width: 95%;
+        padding: 3vh;
+    }
+
+    .responsive-iframe-container {
+        width: 90%;
+        padding-top: 50.625%
+    }
+
+    .btn-resource {
+        margin-bottom: 6vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        margin-top: 22vh;
+        margin-left: 2vh;
+    }
+
+    .etape {
+        margin-left: 2vh;
+        max-width: 100%;
+        padding: 2vh;
+    }
+
+    .responsive-iframe-container {
+        width: 100%;
+        padding-top: 56.25%
+    }
+
+    .btn-resource {
+        margin-bottom: 4vh;
+    }
+}
+
+
+

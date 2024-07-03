@@ -1,0 +1,114 @@
+.tutoriels {
+    max-width: 100vw;
+    background-color: #f2f2f2;
+    padding: 10vh;
+    margin-top: 15vh;
+}
+
+.definition {
+    margin-top: 5vh;
+    max-width: 50vw;
+    /* background-color: red; */
+}
+
+.syn {
+    text-decoration: underline;
+}
+
+
+
+
+/* tutoriels */
+/* .tutoriels {
+    padding: 5vh 10vh;
+    padding-bottom: 10%;
+    
+}
+
+.tutoriels h2 {
+    margin-bottom: 3vh;
+}
+
+.tutoriels-container {
+    margin-top: 5vh;
+}
+ */
+
+.rdv {
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+
+.videos {
+    flex-wrap: wrap;
+    /* background: red; */
+}
+
+.tuto {
+    /* width: calc(33.33% - 2vw); */
+    width: 27%;
+    margin-bottom: 5vh;
+    box-sizing: border-box;
+    position: relative;
+    margin: 5vh 2vw;
+}
+
+.tuto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.tuto:hover img {
+    transform: scale(1.05);
+}
+
+.overlay_4 {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    height: 0;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    backdrop-filter: blur(8px) brightness(80%);
+    transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_wrapper:hover .overlay_4 {
+    bottom: 0;
+    height: 100%;
+    transform: scale(1.05);
+}
+
+.text_overlay {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* separator */
+
+.bar {
+    width: 30vw;
+    height: 5px;
+    border-radius: 16px;
+    margin: 5vh auto;
+    background-color: black;
+    opacity: 0.3;
+}
+/* 
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+} */
+
+

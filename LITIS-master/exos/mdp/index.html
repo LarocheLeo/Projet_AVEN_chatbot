@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Indicateur de puissance | MDP</h2>
+        
+        <h4 class="title">Commentaire :</h4>
+        <p id="comment">
+            Suivez la première indication pour commencer.
+        </p>
+
+        <h4>A faire :</h4>
+        <p id="indication">
+            Commencer par utiliser des lettres, en utilisant au miminum 1 Majuscule.
+        </p>
+        <form action="#">
+            <div class="box">
+                <input type="password" onkeyup="trigger()">
+                <span><ion-icon name="eye-outline"></ion-icon></span>
+            </div>
+            <p><span class="underline">Remarque :</span> Vous pouvez cliquer sur l'oeil pour afficher votre mot de passe.</p>
+            <div class="indicateurs">
+                <span class="ligne"></span>
+                <span class="ligne"></span>
+                <span class="ligne"></span>
+            </div>
+        </form>
+    </div>
+
+
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

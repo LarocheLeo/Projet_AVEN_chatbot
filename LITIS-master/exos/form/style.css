@@ -1,0 +1,113 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /* text-align: center; */
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 50vw;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container h4 {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.container p {
+    margin: auto;
+    text-align: center;
+}
+
+.container ul {
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.container ul li {
+    margin: 10px 0;
+}
+
+form {
+    margin: 50px 0;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.labels {
+    width: 30%;
+    padding-left: 10%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+
+.inputs {
+    width: 70%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-group {
+    /* display: flex; */
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+button {
+    display: block;
+    min-width: 40%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,87 @@
+{
+    "home": "Accueil",
+    "about": "A propos",
+    "resources": "Ressources",
+    "privacy_policy": "Politique de confidentialité",
+    "legal_notice": "Mentions légales",
+    "search_placeholder": "Rechercher...",
+
+    "access_lang": "Changer l'écriture",
+    "access_contrast": "Changer le contraste",
+
+    "presentation": "Découvrez une multitude de <span class='fw-semibold color_v'>ressources</span> soigneusement élaborées pour vous accompagner dans le développement de vos <span class='color_v fw-semibold'>compétences numériques.</span> <br><br>Elles vous permettront ainsi de naviguer avec aisance et assurance à travers le paysage technologique en constante évolution, tout en vous donnant les outils nécessaires pour relever les <span class='color_v fw-semibold'>défis numériques</span> avec confiance et succès.",
+    "resources_btn":"Accéder aux ressources",
+    "about_btn":"A propos",
+
+    "slogan": "La référence digitale pour naviguer vers l'inclusion en ligne",
+
+    "mission": "Quelle est notre <span class='color_v'>mission</span> ?",
+    "mission_description": "Nous nous engageons à rendre le monde numérique accessible à tous.<br><br>Découvrez une multitude de ressources et de vidéos tutoriels pour renforcer vos compétences numériques. De la théorie à la pratique, notre plateforme offre des guides détaillés et des mises en situation concrètes.<br><br><span class='color_v fw-bold'>Notre mission</span> : accompagner chacun vers une maîtrise confiante du digital, pour un avenir prospère et inclusif.",
+
+
+    "tuto_title":"Les <span class='color_v'>tutoriels</span> à la une",
+    "administrative_cat": "Administratif",
+    "com_cat": "Communication",
+    "education_cat": "Education",
+    "health_cat": "Santé",
+    "internet_cat": "Base d'Internet",
+    "security_cat": "Sécurité",
+
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, recusandae. <br><a href='#' class='text-primary text-decoration-underline exclude-accessibility'>Lire la suite</a>",
+
+    "img_sante_doctolib": "./assets/images/miniatures_fr/santé/minia_doctolib.png",
+    "doctolib_rdv_title": "Prendre un rendez-vous sur Doctolib",
+
+    "img_mdp_create": "./assets/images/miniatures_fr/sécurité/minia_crea_mdp.png",
+    "mdp_create_title": "Créer un mot de passe",
+
+    "img_parcoursup": "./assets/images/miniatures_fr/éducation/minia_parcoursup.png",
+    "parcoursup_title": "Utiliser Parcoursup",
+
+    "img_google_create": "./assets/images/miniatures_fr/internet/minia_crea_google.png",
+    "google_create_title": "Créer un compte Google",
+
+
+    
+    
+    
+    
+    
+    "about_title": "Qui sommes-nous ?",
+    "about_pre": "Nous accompagnons les individus dans <span class='fw-semibold color_v'>l'exploration</span> et <span class='fw-semibold color_v'>la maîtrise</span> des outils numériques, en fournissant des ressources éducatives <span class='fw-semibold color_v'>accessibles à tous</span>. Nous visons à <span class='fw-semibold color_v'>sensibiliser</span>, <span class='fw-semibold color_v'>autonomiser</span> et <span class='fw-semibold color_v'>soutenir</span> chacun dans le développement de compétences numériques essentielles, en collaboration avec des partenaires tels que <span class='fw-semibold color_v'>l'AGEFIPH</span>, afin de favoriser leur participation active dans la société moderne.",
+    
+    "about_services": "Quels sont nos <span class='color_v'>services</span> ?",
+    "about_video": "Tutoriels vidéo",
+    "about_video_details": "Nous proposons des tutoriels couvrants un large éventail de sujets allants des bases de l’informatique à des compétences plus avancées.",
+
+    "about_resources_details": "Nous mettons à disposition des ressources telles que des guides pratiques, des fiches techniques et des modèles, pour un apprentissage pratique et autonome à votre rythme.",
+
+    "know_more_button": "En savoir plus",
+
+    "partenaire": "Notre <span class='color_v'>collaboration</span>",
+    "partenaire_details": "<p class='fw-medium'>AGEFIPH a pour mission de promouvoir l'accessibilité numérique pour tous.<br><br>En tant qu'organisation engagée dans l'insertion professionnelle des personnes en situation de handicap, l'AGEFIPH apporte une expertise précieuse et des ressources spécifiques pour aider à surmonter les obstacles liés à l'illectronisme chez les personnes en situation de handicap.</p>",
+
+
+    "equipe": " Notre <span class='color_v'>équipe</span>",
+    "litis": "Laboratoire LITIS",
+    "agefiph": "L'AGEFIPH",
+    "iut": "Université de Rouen / IUT de Rouen",
+
+    "contact": "Nous <span class='color_v'>contacter</span>",
+    "follow": "Suivez nous",
+    "lieu": "Emplacement",
+    "form": "Formulaire de contact",
+    "name_label": "Entrez votre prénom :",
+    "example_name": "Exemple : Julien",
+
+    "mail_label": "Entrez votre adresse mail :",
+    "example_mail": "Exemple : julien.dubois@gmail.com",
+
+    "object_label": "Entrez l'objet de votre requête :",
+    "example_object": "Exemple : Erreur d'affichage sur le site",
+
+    "message_label": "Entrez votre message :",
+
+    "submit_btn": "Soumettre"
+}
+  

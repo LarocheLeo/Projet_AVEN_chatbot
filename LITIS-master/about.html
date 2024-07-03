@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/style_chat.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://kit.fontawesome.com/96e027db6d.js" crossorigin="anonymous"></script>
+    <!-- langue -->
+    <script src="https://unpkg.com/i18next@21.6.13/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@1.4.0/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+    <!--  -->
+    <title>Qui sommes-nous ? | À propos | Existence Numérique</title>
+    
+</head>
+<body>
+    <header id="desktop-header" class="desktop d-flex justify-content-evenly align-items-center bg-white fixed-top exclude-accessibility">
+        <div class="logo d-flex justify-content-center align-items-center">
+            <a href="index.php">
+                <img id="logo_prin" class="img-fluid" src="./assets/images/logo/Logo_principal.png" alt="Logo principal du site existence numérique">
+                <img id="logo_BW" class="img-fluid" src="./assets/images/logo/logo.png" alt="Logo principal du site existence numérique">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <ul class="d-flex justify-content-center align-items-center">
+                <li><a class="fs-3 menu__link fw-semibold" href="index.php" data-i18n="home">Accueil</a></li>
+                <li><a class="active fs-3 menu__link fw-semibold" href="about.html" data-i18n="about">A propos</a></li>
+                <li><a class="fs-3 menu__link fw-semibold" href="ressource.html" data-i18n="resources">Ressources</a></li>
+            </ul>
+        </nav>
+
+        <form class="search exclude-accessibility" action="cible2.php" method="post">
+            <label for="search-input" class="visually-hidden">Rechercher</label>
+            <input id="search-input" class="exclude-accessibility" name="mot" type="text" placeholder="Rechercher..." autocomplete="off" data-i18n="search_placeholder">
+            <a href="#" aria-label="Rechercher" class="exclude-accessibility">
+                <lord-icon class="icon"
+                    src="https://cdn.lordicon.com/unukghxb.json"
+                    trigger="loop"
+                    delay="2000"
+                    style="width:30px;height:30px">
+                </lord-icon>
+            </a>
+        </form>
+
+        <div class="burger-active exclude-accessibility" id="burger-menu">
+            <button class="exclude-accessibility">
+                <p class="exclude-accessibility">Menu</p>
+                <span class="exclude-accessibility"></span>
+            </button>
+        </div>
+
+        <div id="menu" class="exclude-accessibility">
+            <ul>
+                <li><a class="fs-3 fw-bold menu__link fw-semibold" href="index.php" data-i18n="home">Accueil</a></li>
+                <li><a class="fs-3 fw-bold menu__link fw-semibold" href="about.html" data-i18n="about">A propos</a></li>
+                <li><a class="fs-3 fw-bold menu__link fw-semibold" href="ressource.html" data-i18n="resources">Ressources</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- phone header -->
+    <header id="phone-header" class="phone d-flex flex-column align-items-center bg-white fixed-top exclude-accessibility">
+        <div class="header-container d-flex justify-content-around align-items-center">
+            <div class="logo">
+                <a href="index.php"><img class="img-fluid" src="./assets/images/logo/Logo_principal.png" alt="Logo principal du site existence numérique"></a>
+            </div>
+            
+            <div class="burger-active exclude-accessibility" id="burger-menu-phone">
+                <button class="exclude-accessibility">
+                    <p class="exclude-accessibility">Menu</p>
+                    <span class="exclude-accessibility"></span>
+                </button>
+            </div>
+    
+            <div id="menu-phone" class="exclude-accessibility">
+                <ul>
+                    <li><a class="fs-3 fw-bold menu__link fw-semibold" href="index.php" data-i18n="home">Accueil</a></li>
+                    <li><a class="fs-3 fw-bold menu__link fw-semibold" href="about.html" data-i18n="about">A propos</a></li>
+                    <li><a class="fs-3 fw-bold menu__link fw-semibold" href="ressource.html" data-i18n="resources">Ressources</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="phone_bot d-flex justify-content-between exclude-accessibility">
+            <form class="search exclude-accessibility" action="cible2.php" method="post">
+                <label for="search-input" class="visually-hidden">Rechercher</label>
+                <input type="text" id="search-input" placeholder="Rechercher...">
+                <a href="#" aria-labelledby="search-input">
+                    <lord-icon class="icon phone_icon"
+                        src="https://cdn.lordicon.com/unukghxb.json"
+                        trigger="loop"
+                        delay="2000"
+                        style="width:30px;height:30px">
+                    </lord-icon>
+                    <span class="visually-hidden">Rechercher</span>
+                </a>
+            </form>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- langue -->
+    <div class="language-selector exclude-accessibility">
+        <button class="dropbtn exclude-accessibility" id="selected-lang">FR</button>
+        <div class="dropdown-content" id="language-menu">
+            <a href="#" data-lang="fr">FR : Français</a>
+            <a href="#" data-lang="en">EN : English</a>
+            <a href="#" data-lang="es">ES : Español</a>
+            <a href="#" data-lang="de">DE : Deutsch</a>
+        </div>
+    </div>
+
+    <!-- accessibilité -->
+    <div id="access" class="access d-flex justify-content-center align-items-center exclude-accessibility">
+        <i class="fa-solid fa-eye-low-vision exclude-accessibility"></i>
+        <div id="access-menu" class="access-menu">
+            <label class="switch mg">
+                <span class="fw-bold color_v exclude-accessibility" data-i18n="access_lang">Changer l'écriture</span>
+                <input type="checkbox" class="font-toggle exclude-accessibility">
+                <span class="slider round exclude-accessibility"></span>
+            </label>
+            <label class="switch">
+                <span class="fw-bold color_v exclude-accessibility" data-i18n="access_contrast">Changer le contraste</span>
+                <input type="checkbox" class="bg-toggle exclude-accessibility">
+                <span class="slider round exclude-accessibility"></span>
+            </label>
+        </div>
+    </div>
+
+    <!-- chatbot -->
+    <div id="chatbot" class="chatbot d-flex justify-content-center align-items-center">
+        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="avatar du chatbot">
+        <i id="croix" class="fa-solid fa-xmark" style="display:none"></i>
+         <div id="container_chat">
+            <div class="init"><p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p>
+                Je peux répondre à vos questions relatives à la recherche des ressources qui ont été mises,
+                sur la platforme pour vous aider dans vos demarches en ligne.</div>
+            <div id="repo"></div>
+            <div class="class_input">
+                <input type="text" id="question_input" placeholder="Posez votre question">
+                <button id="poser_question_btn" onclick="question()"><img class="icon_send" src="assets/images/icone_chat/icone_envoye4.png" alt="" srcset=""></button>
+            </div>
+        </div>
+   </div>
+
+    
+
+    
+    <!-- apropos -->
+    <section class="apropos">
+        <div class="apropos-container d-flex flex-column align-items-center">
+            <h1 class="fw-semibold" data-i18n="about_title">Qui sommes-nous ?</h1>
+            <!-- class bootstrap qui ne fonctionne pas "fs-sm-4" -->
+            <p class="fs-sm-4 fw-medium" data-i18n="about_pre">
+            Nous accompagnons les individus dans <span class="fw-semibold color_v">l'exploration</span> et <span class="fw-semibold color_v">la maîtrise</span> des outils numériques, en fournissant des ressources éducatives <span class="fw-semibold color_v">accessibles à tous</span>. Nous visons à <span class="fw-semibold color_v">sensibiliser</span>, <span class="fw-semibold color_v">autonomiser</span> et <span class="fw-semibold color_v">soutenir</span> chacun dans le développement de compétences numériques essentielles. C'est une collaboration entre l'AGEFIPH, l'Université de Rouen, l'IUT de Rouen et le laboratoire de recherche LITIS.</p>
+
+            <div class="images col-xl-6 col-lg-12">
+                <img class="img-fluid rounded-4" src="./assets/images/equipe/equipe.jpg" alt="Photo de l'équipe du site existence numérique">
+            </div>
+
+        </div>
+    </section>
+
+    
+    <!-- services -->
+    <section class="services">
+        <h2 class="fw-bold" data-i18n="about_services">
+            Quels sont nos <span class="color_v">services</span> ?
+        </h2>
+        
+        <div class="container services-container d-flex justify-content-between">
+            
+            <div class="box box-1 d-flex flex-column  bg-white rounded-4 exclude-accessibility">
+                <div class="titre-icon d-flex justify-content-between">
+                    <div class="titre-trait">
+                        <h3 class="fw-bold text exclude-accessibility" data-i18n="about_video">Tutoriels vidéo</h3>
+                        <div class="trait exclude-accessibility"></div>
+                    </div>
+                    <lord-icon class="icon-services"
+                        src="https://cdn.lordicon.com/mpzsxzrz.json"
+                        trigger="loop"
+                        delay="2000"
+                        style="width:150px;height:120px;">
+                    </lord-icon>
+                </div>
+
+                <p class="fw-medium text exclude-accessibility" data-i18n="about_video_details">
+                Nous proposons des tutoriels couvrant un large éventail de sujets allant des bases de l’informatique à des compétences plus avancées.</p>
+
+                <button class="btn fw-bold btn-savoir exclude-accessibility BonW" onclick="window.location.href='https:\//www.youtube.com/channel/UCbwy3M3Ukf2G-NimqT5_Wbg'" data-i18n="know_more_button">En savoir plus</button>
+
+            </div>
+            
+            <div class="box d-flex flex-column bg-white rounded-4 exclude-accessibility">
+                <div class="titre-icon d-flex justify-content-between">
+                    <div class="titre-trait">
+                        <h3 class="fw-bold text exclude-accessibility" data-i18n="resources">Ressources</h3>
+                        <div class="trait exclude-accessibility"></div>
+                    </div>
+                    <img class="icon-services" src="assets/images/ressource.gif" alt="Illustration de ressources données à des personnes" style="width:150px;height:130px;">
+                </div>
+                
+                <p class="fw-medium text exclude-accessibility" data-i18n="about_resources_details">
+                Nous mettons à disposition des ressources telles que des guides pratiques, des fiches techniques et des modèles, pour un apprentissage pratique et autonome à votre rythme.</p>
+
+                <button onclick="window.location.href='ressource.html'" class="btn fw-bold btn-savoir exclude-accessibility BonW" data-i18n="know_more_button">En savoir plus</button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- partenaire -->
+    <section class="partenaire">
+        <h2 class="fw-bold" data-i18n="partenaire">
+            Notre <span class="color_v">collaboration</span>
+        </h2>
+
+        <div class="container partenaire-container d-flex flex-column justify-content-center align-items-center">
+            <div class="partenaire_logo d-flex justify-content-evenly align-items-center">
+                <img src="./assets/images/logo/agefiph logo.svg" alt="Logo de l'AGEFIPH">
+                <img src="./assets/images/logo/litis_logo.webp" alt="Logo de LITIS">
+            </div>
+            <p class="fw-medium" data-i18n="partenaire_details">AGEFIPH a pour mission de promouvoir l'accessibilité numérique pour tous.<br><br>
+            En tant qu'organisation engagée dans l'insertion professionnelle des personnes en situation de handicap, l'AGEFIPH apporte une expertise précieuse et des ressources spécifiques pour aider à surmonter les obstacles liés à l'illectronisme chez les personnes en situation de handicap.</p>
+        </div>
+    </section>
+
+
+    <!-- equipe -->
+    <section class="equipe">
+        <h2 class="fw-bold" data-i18n="equipe">
+            Notre <span class="color_v">équipe</span>
+        </h2>
+
+        <div class="container equipe-container">
+            <div class="equipe-litis d-flex flex-column align-items-center">
+                <h3 class="fs-1 fw-semibold color_v" data-i18n="litis">Laboratoire LITIS</h3>
+                <div class="boite d-flex justify-content-between">
+                    <div class="team">
+                        <img src="assets/images/equipe/katerine.png" alt="Illustration représentant Katerine">
+                        <h4 class="fw-semibold">Katerine</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipe-agefiph">
+                <h3 class="fs-1 fw-semibold color_v" data-i18n="agefiph">L'AGEFIPH</h3>
+                <div class="boite d-flex justify-content-between">
+                    <div class="team">
+                        <img src="assets/images/equipe/marya.png" alt="Illustration représentant Marya">
+                        <h4 class="fw-semibold">Marya</h4>
+                    </div>
+                    <div class="team">
+                        <img src="assets/images/equipe/elouan.png" alt="Illustration représentant Elouan">
+                        <h4 class="fw-semibold">Elouan</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipe-iut">
+                <h3 class="fs-1 fw-semibold color_v" data-i18n="iut">Université de Rouen / IUT de Rouen</h3>
+                <div class="boite d-flex justify-content-between">
+                    <div class="team">
+                        <img src="assets/images/equipe/dylan.png" alt="Illustration représentant Dylan">
+                        <h4 class="fw-semibold">Dylan</h4>
+                    </div>
+                    <div class="team">
+                        <img src="assets/images/equipe/nabil.png" alt="Illustration représentant Nabil">
+                        <h4 class="fw-semibold">Nabil</h4>
+                    </div>
+                    <div class="team">
+                        <img src="assets/images/equipe/florian.png" alt="Illustration représentant Florian">
+                        <h4 class="fw-semibold">Florian</h4>
+                    </div>
+                    <div class="team">
+                        <img src="assets/images/equipe/souna.png" alt="Illustration représentant Souna">
+                        <h4 class="fw-semibold">Souna</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <section class="contact">
+        <h2 class="fw-bold" data-i18n="contact">
+            Nous <span class="color_v">contacter</span>
+        </h2>
+
+        <div class="container contact-container d-flex flex-column justify-content-between">
+            <div class="lieu d-flex justify-content-between align-items-center">
+                <div class="reseaux">
+                    <h3 class="fs-2 fw-semibold color_v" data-i18n="follow">Suivez nous</h3>
+                    <div class="logo-reseaux d-flex justify-content-around">
+                        <div>
+                            <a href="https://www.instagram.com/?hl=fr"><img src="assets/images/logo/logo-insta.png" alt="Logo instagram"></img></a>
+                            <p class="fw-medium">Instagram</p>
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com"><img src="assets/images/logo/logo-facebook.png" alt="Logo facebook"></img></a>
+                            <p class="fw-medium">Facebook</p>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/dylan-dumont-97ab64271/"><img src="assets/images/logo/logo-linkedin.png" alt="Logo linkedin"></img></a>
+                            <p class="fw-medium">Linkedin</p>
+                        </div>
+                        <div>
+                            <a href="https://www.youtube.com/channel/UCbwy3M3Ukf2G-NimqT5_Wbg"><img src="assets/images/logo/logo-youtube.png" alt="Logo youtube"></img></a>
+                            <p class="fw-medium">Youtube</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adresse">
+                    <h3 class="fs-2 fw-semibold color_v" data-i18n="lieu">Emplacement</h3>
+                    <p class="fw-semibold">30 Rue Henri Gadeau de Kerville, 76038 Rouen</p>
+                </div>
+            </div>
+            <div class="form-carte">
+                <div class="form">
+                    <h3 class="fs-2 fw-semibold color_v" data-i18n="form">Formulaire de contact</h3>
+                    <form action="mail.php" method="post">
+                        <div>
+                            <label for="prenom" class="fs-6 fw-semibold" data-i18n="name_label">Entrez votre prénom :</label>
+                            <input type="text" id="prenom" name="prenom" placeholder="Exemple : Julien" required data-i18n="example_name" pattern="[A-Za-zÀ-ÿ\s\-]+">
+                        </div>
+                        <div>
+                            <label for="email" class="fs-6 fw-semibold" data-i18n="mail_label">Entrez votre adresse mail :</label>
+                            <input type="email" id="email" name="email" placeholder="Exemple : julien.dubois@gmail.com" required data-i18n="example_mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        <div>
+                            <label for="objet" class="fs-6 fw-semibold" data-i18n="object_label">Entrez l'objet de votre requête :</label>
+                            <input type="text" id="objet" name="objet" placeholder="Exemple : Erreur d'affichage sur le site" required data-i18n="example_object" pattern="[A-Za-z0-9À-ÿ\s\-\,.&quot;!?\(\)]+">
+                        </div>
+                        <div>
+                            <label for="message" class="fs-6 fw-semibold" data-i18n="message_label">Entrez votre message :</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div>
+                            <button class="btn fw-bold btn-form" type="submit" data-i18n="submit_btn">Soumettre</button>
+                        </div>
+                    </form>
+                </div>
+                
+                
+                <div class="carte">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.888430891004!2d1.078311576707716!3d49.42992327141525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0de6d39fe8c63%3A0x31a48af2a2add715!2s30%20Rue%20Henri%20Gadeau%20de%20Kerville%2C%2076038%20Rouen!5e0!3m2!1sfr!2sfr!4v1713859115253!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="d-flex flex-column align-items-center">
+            <div class="link-container">
+                <ul class="d-flex">
+                    <li><a class="fs-4 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
+                    <div class="separator"></div>
+                    <li><a class="fs-4 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
+                    <div class="separator"></div>
+                    <li><a class="fs-4 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
+                    <div class="separator"></div>
+                    <li><a class="fs-4 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
+                    <div class="separator"></div>
+                    <li><a class="fs-4 menu__link fw-medium" href="legal.html" data-i18n="legal_notice">Mentions légales</a></li>
+                </ul>
+            </div>
+
+            <div class="link-container_992 d-flex flex-column align-items-center none">
+                <div class="top">
+                    <ul class="d-flex">
+                        <li><a class="fs-4 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
+                        <div class="separator"></div>
+                        <li><a class="fs-4 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
+                        <div class="separator"></div>
+                        <li><a class="fs-4 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
+                    </ul>
+                </div>
+                <div class="bot">
+                    <ul class="d-flex">
+                        <li><a class="fs-4 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
+                        <div class="separator"></div>
+                        <li><a class="fs-4 menu__link fw-medium" href="legal.html" data-i18n="legal_notice">Mentions légales</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="logo-container">
+                <img class="img-fluid" src="./assets/images/logo/litis_logo.webp" alt="Logo du laboratoire LITIS">
+                <img class="img-fluid" src="./assets/images/logo/agefiph logo.svg" alt="Logo de l'AGEFIPH">
+                <img class="img-fluid" src="./assets/images/logo/logo_iut.png" alt="Logo de l'Université de Rouen">
+                <img class="img-fluid" src="./assets/images/logo/iut_rouen_logo_nobg.png" alt="Logo de l'IUT de Rouen">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/translate.js"></script>
+    <script src="./assets/js/script_chatbot.js"></script>
+    
+</body>
+</html>

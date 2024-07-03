@@ -1,0 +1,79 @@
+{
+    "home": "Startseite",
+    "about": "Über uns",
+    "resources": "Ressourcen",
+    "privacy_policy": "Datenschutzrichtlinie",
+    "legal_notice": "Rechtlicher Hinweis",
+    "search_placeholder": "Suchen...",
+
+    "access_lang": "Schriftart ändern",
+    "access_contrast": "Kontrast ändern",
+
+    "presentation": "Entdecken Sie eine Vielzahl von <span class='fw-semibold color_v'>Ressourcen</span>, die sorgfältig entwickelt wurden, um Sie bei der Entwicklung Ihrer <span class='color_v fw-semibold'>digitalen Fähigkeiten</span> zu unterstützen. <br><br>Sie ermöglichen es Ihnen, sich sicher und selbstbewusst in der sich ständig weiterentwickelnden technologischen Landschaft zu bewegen und geben Ihnen die Werkzeuge an die Hand, um die <span class='color_v fw-semibold'>digitalen Herausforderungen</span> erfolgreich zu meistern.",
+    "resources_btn": "Zugriff auf die Ressourcen",
+    "about_btn": "Über uns",
+
+    "slogan": "Die digitale Referenz für den Weg zur Online-Inklusion",
+
+    "mission": "Was ist unsere <span class='color_v'>Mission</span>?",
+    "mission_description": "Wir setzen uns dafür ein, die digitale Welt für alle zugänglich zu machen.<br><br>Entdecken Sie eine Vielzahl von Ressourcen und Video-Tutorials, um Ihre digitalen Fähigkeiten zu stärken. Von der Theorie zur Praxis bietet unsere Plattform detaillierte Anleitungen und konkrete Anwendungsszenarien.<br><br><span class='color_v fw-bold'>Unsere Mission</span>: Jeden Einzelnen auf dem Weg zu einem sicheren Umgang mit der digitalen Welt zu begleiten, für eine wohlhabende und inklusive Zukunft.",
+
+    "tuto_title": "Die <span class='color_v'>beliebtesten</span> Tutorials",
+    "administrative_cat": "Verwaltung",
+    "com_cat": "Kommunikation",
+    "education_cat": "Bildung",
+    "health_cat": "Gesundheit",
+    "internet_cat": "Internetgrundlagen",
+    "security_cat": "Sicherheit",
+
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, recusandae. <br><a href='#' class='text-primary text-decoration-underline exclude-accessibility'>Mehr lesen</a>",
+
+    "img_sante_doctolib": "./assets/images/miniatures_de/gesundheit/minia_doctolib.png",
+    "doctolib_rdv_title": "Einen Termin bei Doctolib vereinbaren",
+
+    "img_mdp_create": "./assets/images/miniatures_de/sicherheit/minia_crea_mdp.png",
+    "mdp_create_title": "Ein sicheres Passwort erstellen",
+
+    "img_parcoursup": "./assets/images/miniatures_de/bildung/minia_parcoursup.png",
+    "parcoursup_title": "Parcoursup verwenden",
+
+    "img_google_create": "./assets/images/miniatures_de/internet/minia_crea_google.png",
+    "google_create_title": "Ein Google-Konto erstellen",
+
+
+    "about_title": "Wer sind wir?",
+    "about_pre": "Wir unterstützen Einzelpersonen bei der <span class='fw-semibold color_v'>Erkundung</span> und <span class='fw-semibold color_v'>Beherrschung</span> digitaler Werkzeuge, indem wir Bildungsressourcen <span class='fw-semibold color_v'>für alle zugänglich</span> bereitstellen. Unser Ziel ist es, das <span class='fw-semibold color_v'>Bewusstsein</span> zu schärfen, <span class='fw-semibold color_v'>zu befähigen</span> und <span class='fw-semibold color_v'>zu unterstützen</span> beim Erwerb wesentlicher digitaler Fähigkeiten, in Zusammenarbeit mit Partnern wie <span class='fw-semibold color_v'>AGEFIPH</span>, um ihre aktive Teilnahme an der modernen Gesellschaft zu fördern.",
+    
+    "about_services": "Was sind unsere <span class='color_v'>Dienstleistungen</span>?",
+    "about_video": "Video-Tutorials",
+    "about_video_details": "Wir bieten Tutorials, die eine breite Palette von Themen abdecken, von grundlegenden Computerkenntnissen bis hin zu fortgeschrittenen Fähigkeiten.",
+
+    "about_resources_details": "Wir stellen Ressourcen wie praktische Anleitungen, technische Datenblätter und Vorlagen für selbstgesteuertes und praktisches Lernen zur Verfügung.",
+
+    "know_more_button": "Mehr erfahren",
+
+    "partenaire": "Unsere <span class='color_v'>Zusammenarbeit</span>",
+    "partenaire_details": "<p class='fw-medium'>Die Mission von AGEFIPH ist es, digitale Zugänglichkeit für alle zu fördern.<br><br>Als Organisation, die sich der beruflichen Eingliederung von Menschen mit Behinderungen widmet, bietet AGEFIPH wertvolle Fachkenntnisse und spezifische Ressourcen, um die Hindernisse im Zusammenhang mit digitalem Analphabetismus bei Menschen mit Behinderungen zu überwinden.</p>",
+
+    "equipe": "Unser <span class='color_v'>Team</span>",
+    "litis": "LITIS Labor",
+    "agefiph": "AGEFIPH",
+    "iut": "Universität Rouen / IUT Rouen",
+
+    "contact": "Kontaktieren Sie <span class='color_v'>uns</span>",
+    "follow": "Folgen Sie uns",
+    "lieu": "Standort",
+    "form": "Kontaktformular",
+    "name_label": "Geben Sie Ihren Vornamen ein:",
+    "example_name": "Beispiel: Julien",
+
+    "mail_label": "Geben Sie Ihre E-Mail-Adresse ein:",
+    "example_mail": "Beispiel: julien.dubois@gmail.com",
+
+    "object_label": "Geben Sie den Betreff Ihrer Anfrage ein:",
+    "example_object": "Beispiel: Anzeige Fehler auf der Website",
+
+    "message_label": "Geben Sie Ihre Nachricht ein:",
+
+    "submit_btn": "Absenden"
+}

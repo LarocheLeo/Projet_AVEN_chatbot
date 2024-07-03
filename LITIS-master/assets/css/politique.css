@@ -1,0 +1,98 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--gris-clair);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.politique {
+    padding: 5vh 10vh;
+}
+
+h1 {
+    margin-top: 15vh;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--secondaire);
+    font-size: 30px;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    border-bottom: 2px solid var(--secondaire);
+    padding-bottom: 1vh;
+}
+
+h3 {
+    margin: 2vh 0;
+}
+
+p {
+    font-size: 20px;
+    margin: 1vh 0;
+}
+
+ul {
+    margin: 1vh 0;
+    padding-left: 20px;
+}
+
+.politique ul li {
+    font-size: 20px;
+    margin-bottom: 0.5vh;
+    list-style-type: circle;
+}
+
+a {
+    color: var(--violet);
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 5vh;
+}
+
+.contact-info {
+    margin: 2vh 0;
+}
+
+.policy-dates {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 576px) {
+    /* padding de la page */ 
+    .politique {
+        padding: 10vh 5vw;
+    }
+    
+    .politique h1 {
+        font-size: 35px;
+        padding-top: 3vh;
+        margin-top: 8vh;
+        margin-bottom: 5vh;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p, .politique ul li {
+        font-size: 16px;
+    }
+}
