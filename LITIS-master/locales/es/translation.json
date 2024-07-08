@@ -1,4 +1,5 @@
 {
+    "aven_chatbot": "<p>Hola, soy el asistente virtual de Existence Numerique.</p> <p>Puedo responder a tus preguntas sobre cómo encontrar los recursos que se han puesto en la plataforma para ayudarte con tus trámites online. En los idiomas que ofrece la plataforma.",
     "home": "Inicio",
     "about": "Acerca de",
     "resources": "Recursos",
@@ -77,5 +78,18 @@
 
     "message_label": "Ingrese su mensaje:",
 
-    "submit_btn": "Enviar"
+    "submit_btn": "Enviar",
+
+    "go_exo": "Ya es hora de que practiques para saber si has seguido los recursos de la categoría",
+    "go_quiz": "Haz la prueba",
+    "title_quiz": "Cuestionario",
+    "Administrative_procedures": "Procedimientos administrativos",
+    "menu": "Menú",
+    "intro_admin": "Aquí tienes una lista completa de recursos que te ayudarán a gestionar tus tareas administrativas más fácilmente, sin que te estresen",
+    "intro_sec": "Aquí tiene una lista completa de recursos que le ayudarán a gestionar sus tareas administrativas más fácilmente, sin estrés.",
+    "intro_com": "Aquí tienes algunos recursos que te ayudarán a utilizar las redes sociales o tu bandeja de entrada de correo electrónico con facilidad.",
+    "intro_health": "¿Quiere concertar una cita médica, pero le parece demasiado complicado? No se preocupe, aquí encontrará las respuestas a todas sus preguntas.",
+    "intro_internet": "Aprende a dominar los fundamentos digitales con estos tutoriales fáciles de seguir. Simplifica ya tu vida digital",
+    "intro_education": "Tanto si eres estudiante como si eres padre, descubre cómo navegar fácilmente por las plataformas de educación en línea con estos prácticos tutoriales."
+
 }

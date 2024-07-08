@@ -2,6 +2,8 @@ import numpy as np
 import nltk
 from nltk.stem.snowball import SnowballStemmer
 import spacy
+
+
 nltk.download('punkt')
 nltk.download('stopwords')
 nlp = spacy.load("fr_core_news_sm")

@@ -57,7 +57,7 @@ function question(){
     }
     var userInput = document.getElementById("question_input").value;
     var data = JSON.stringify({ question: userInput });
-    xhr.open("POST", "https://chatbot-stage-lchpcgazbq-od.a.run.app/myapi");                        
+    xhr.open("POST", "https://chatbot-cimhpvexea-od.a.run.app/myapi");                         
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(data);
 }

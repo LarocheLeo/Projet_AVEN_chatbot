@@ -5,6 +5,8 @@
     "privacy_policy": "Politique de confidentialité",
     "legal_notice": "Mentions légales",
     "search_placeholder": "Rechercher...",
+    "aven_chatbot": "<p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p> Je peux répondre à vos questions relatives à la recherche des ressources qui ont été mises, sur la platforme pour vous aider dans vos demarches en ligne. Dans les langues proposer par la plateforme.",
+
 
     "access_lang": "Changer l'écriture",
     "access_contrast": "Changer le contraste",
@@ -82,6 +84,52 @@
 
     "message_label": "Entrez votre message :",
 
-    "submit_btn": "Soumettre"
+    "submit_btn": "Soumettre",
+
+    "go_exo": "Il est grand temps de vous exercer afin de savoir si vous avez bien suivi les ressources de la catégorie",
+    "go_quiz": "Faire le quiz",
+    "title_quiz": "Quiz",
+    "Administrative_procedures": "Démarches administratives",
+    "menu": "Menu",
+    "intro_sec": "Découvrez nos ressources pour renforcer votre sécurité en ligne. Avec nous, vous serez protégés contre les menaces numériques.",
+    "intro_admin": "Voici une liste complète de ressources pour vous aider à gérer vos tâches administratives plus facilement, sans que cela ne vous stresse.",
+    "intro_com": "Voici des ressources pour vous aider à utiliser les réseaux sociaux ou votre boite mail en toute facilité.",
+    "intro_health": "Vous désirez prendre un rendez-vous médical, mais cela vous semble trop compliqué ? Ne vous inquiétez pas, ici, vous trouverez les réponses à toutes vos questions.",
+    "intro_internet": "Apprenez à maîtriser les bases du numérique avec ces tutoriels faciles à suivre. Simplifiez votre vie numérique dès maintenant !",
+    "intro_education": "Que vous soyez élève ou parent, découvrez comment naviguer facilement sur les plateformes éducatives en ligne avec ces tutoriels pratiques.",
+
+    "win_pdf": "Vous trouverez dans ce PDF tous les raccourcis pour le système d'exploitation Windows.",
+    "mac_pdf": "Vous trouverez dans ce PDF tous les raccourcis pour le système d'exploitation Mac.",
+    "extension_pdf":"Vous trouverez dans ce PDF toutes les extensions de fichier dont vous avez besoin.",
+    "crossair_pdf": "Vous trouverez dans ce PDF toutes les formes de curseurs dont vous avez besoin.",
+    "win_short_cut": "Les raccourcis Windows",
+    "mac_short_cut": "Les raccourcis Mac",
+    "extentions": "Les extensions",
+    "crossair": "Les formes de curseurs",
+    "download_resource": "Nos <span class='color_v'>ressources téléchargeables</span>",
+    "visit":"Consulter",
+    "description_com": "Vous retrouverez dans cette rubrique toutes les ressources qui vous aideront à communiquer en ligne.",
+    "description_health": "Vous retrouverez dans cette rubrique toutes les ressources en rapport avec la santé.",
+    "description_educ": "Vous retrouverez dans cette rubrique toutes les ressources en lien avec l'éducation en ligne.",
+    "description_admin": "Vous retrouverez dans cette rubrique toutes les ressources qui vous permettront de réussir vos démarches administratives.",
+    "description_security": "Vous retrouverez dans cette rubrique toutes les ressources qui vous aideront à garantir votre sécurité sur le web.",
+    "description_internet": "Vous retrouverez dans cette rubrique toutes les ressources qui vous aideront à acquérir toutes les bases d'Internet.",
+    "description_faq": "Vous trouverez ici les réponses à toutes vos questions.",
+    "description_glossary": "Voici un glossaire avec tous les termes techniques à votre disposition.",
+    "description_resources": "Vous trouverez ci-dessous des ressources qui pourraient vous être pratiques.",
+    "title_com": "Communication",
+    "title_health": "Santé",
+    "title_educ": "Éducation",
+    "title_admin": "Administratif",
+    "title_security": "Sécurité",
+    "title_internet": "Bases d'Internet",
+    "title_faq": "Foire aux questions",
+    "title_glossary": "Glossaire",
+    "title_resources": "Nos <span class='color_v'>ressources téléchargeables",
+    "themes": "Nos <span class='color_v'>thématiques</span>",
+    "more_info": "En savoir plus",
+    "functionalities": "Nos autres <span class='color_v'>fonctionnalités"
+    
+
 }
   

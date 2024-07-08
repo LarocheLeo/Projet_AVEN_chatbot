@@ -1,5 +1,6 @@
-{
+{   
     "title": "Welcome",
+    "aven_chatbot": "<p>Hello, I am the virtual assistant of the Existence Numerique.</p> I can answer your questions related to the search of resources that have been put, on the platform to help you in your online demarches. In the languages offered by the platform.",
     "home": "Home",
     "about": "About",
     "resources": "Resources",
@@ -81,6 +82,19 @@
 
     "message_label": "Enter your message:",
 
-    "submit_btn": "Submit"
-}
+    "submit_btn": "Submit",
+
+    "go_exo": "It's time to practice to see if you've followed the resources in the category",
+    "go_quiz": "Take the quiz",
+    "title_quiz": "Quiz",
+    "Administrative_procedures": "Administrative procedures",
+    "menu": "Menu",
+    "intro_admin": "Here's a comprehensive list of resources to help you manage your administrative tasks more easily, without the stress.",
+    "intro_sec": "Here's a comprehensive list of resources to help you manage your administrative tasks more easily, without the stress.",
+    "intro_com": "Here are some resources to help you use social networks or your mailbox with ease.",
+    "intro_health": "Would you like to book a medical appointment, but find it too complicated? Don't worry, you'll find the answers to all your questions here.s",
+    "intro_internet": "Learn to master digital basics with these easy-to-follow tutorials. Simplify your digital life now!",
+    "intro_education": "Whether you're a student or a parent, discover how to navigate online educational platforms easily with these practical tutorials."
+
+   }
   

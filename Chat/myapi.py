@@ -6,6 +6,7 @@ import uvicorn
 app = FastAPI()
 origins = ["*"]  # Ou spécifiez les origines qu'on souhaite autoriser, par exemple ["http://localhost", "http://127.0.0.1"]
 
+
 # Ajouter le middleware CORS
 app.add_middleware(
     CORSMiddleware,
