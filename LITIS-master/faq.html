@@ -7,6 +7,7 @@
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/faq.css">
+    <link rel="stylesheet" href="./assets/css/style_chat.css">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://kit.fontawesome.com/96e027db6d.js" crossorigin="anonymous"></script>
     <!-- langue -->
@@ -48,7 +49,7 @@
 
         <div class="burger-active exclude-accessibility" id="burger-menu">
             <button class="exclude-accessibility">
-                <p class="exclude-accessibility">Menu</p>
+                <p class="exclude-accessibility"data-i18n="menu">Menu</p>
                 <span class="exclude-accessibility"></span>
             </button>
         </div>
@@ -71,7 +72,7 @@
             
             <div class="burger-active exclude-accessibility" id="burger-menu-phone">
                 <button class="exclude-accessibility">
-                    <p class="exclude-accessibility">Menu</p>
+                    <p class="exclude-accessibility" data-i18n="menu">Menu</p>
                     <span class="exclude-accessibility"></span>
                 </button>
             </div>
@@ -128,49 +129,59 @@
             </label>
         </div>
     </div>
-
+     <!-- chatbot -->
     <div id="chatbot" class="chatbot d-flex justify-content-center align-items-center">
-        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="Avatar du Chatbot">
+        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="avatar du chatbot">
         <i id="croix" class="fa-solid fa-xmark" style="display:none"></i>
-    </div>
+         <div id="container_chat">
+            <div class="init" data-i18n="aven_chatbot"><p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p>
+                Je peux répondre à vos questions relatives à la recherche des ressources qui ont été mises,
+                sur la plateforme pour vous aider dans vos demarches en ligne. Dans les langues proposer par la plateforme.</div>
+            <div id="repo"></div>
+            <div class="class_input">
+                <input type="text" id="question_input" placeholder="Posez votre question">
+                <button id="poser_question_btn" onclick="question()"><img class="icon_send" src="assets/images/icone_chat/icone_envoye4.png" alt="" srcset=""></button>
+            </div>
+        </div>
+   </div>
 
 
     <!-- titre -->
     <section class="container titre d-flex flex-column align-items-center">
-        <h1>Foire aux questions</h1>
-        <p class="">Ici, vous pouvez trouver les réponses à toutes vos questions.</p>
+        <h1 data-i18n="title_faq">Foire aux questions</h1>
+        <p class="" data-i18n="faq_intro">Ici, vous pouvez trouver les réponses à toutes vos questions.</p>
     </section>
 
     <!-- qr -->
     <section class="container qr">
         <div class="quest">
-            <h2>Quel type de ressources proposez-vous sur votre site ?</h2>
-            <p>Nous proposons une variété de ressources, y compris des articles, des tutoriels vidéo, des quiz interactifs et des fichiers téléchargeables.</p>
+            <h2 data-i18n="what_resources">Quel type de ressources proposez-vous sur votre site ?</h2>
+            <p data-i18n="reponse_resources">Nous proposons une variété de ressources, y compris des articles, des tutoriels vidéo, des quiz interactifs et des fichiers téléchargeables.</p>
         </div>
         <div class="quest">
-            <h2>Comment puis-je accéder aux ressources disponibles ?</h2>
-            <p>Vous pouvez accéder aux ressources disponibles en naviguant sur notre site web et en utilisant la barre de recherche ou les menus de navigation. <br/><a href="ressource.html">Accéder à la page ressource</a></p>
+            <h2 data-i18n="use_resources">Comment puis-je accéder aux ressources disponibles ?</h2>
+            <p data-i18n="navigation">Vous pouvez accéder aux ressources disponibles en naviguant sur notre site web et en utilisant la barre de recherche ou les menus de navigation. <br/><a href="ressource.html">Accéder à la page ressource</a></p>
         </div>
         <div class="quest">
-            <h2>Comment puis-je accéder aux tutoriels vidéo ?</h2>
-            <p>Les tutoriels vidéo sont accessibles via notre plateforme en ligne. Pour cela, il faut aller dans les ressources, puis sélectionner une catégorie et enfin une ressource qui vous intéresse. Sinon, l’intégralité de nos vidéos est disponible sur la chaîne Youtube ‘Existence Numérique’. 
-            <br/><a href="https://www.youtube.com/channel/UCbwy3M3Ukf2G-NimqT5_Wbg">Se rendre sur notre chaîne Youtube</a></p>
+            <h2 data-i18n="tuto_where">Comment puis-je accéder aux tutoriels vidéo ?</h2>
+            <p data-i18n="where_video">Les tutoriels vidéo sont accessibles via notre plateforme en ligne. Pour cela, il faut aller dans les ressources, puis sélectionner une catégorie et enfin une ressource qui vous intéresse. Sinon, l’intégralité de nos vidéos est disponible sur la chaîne Youtube ‘Existence Numérique’. 
+            <br/><a href="https://www.youtube.com/channel/UCbwy3M3Ukf2G-NimqT5_Wbg" data-i18n="youtube_account">Se rendre sur notre chaîne Youtube</a></p>
         </div>
         <div class="quest">
-            <h2>Proposez-vous des tutoriels vidéo accessibles à tous ?</h2>
-            <p>Nous accordons une grande importance à l'accessibilité de nos ressources à tous. C'est pour cela que les vidéos ont une voix-off, permettant à une personne aveugle ou malvoyante de suivre le tutoriel sans grande difficulté. Pour les personnes sourdes ou malentendantes, la vidéo contient des bulles de texte, ce qui leur permettent de lire et de comprendre tous les contenus de ce site.</p>
+            <h2 data-i18n="tuto_video">Proposez-vous des tutoriels vidéo accessibles à tous ?</h2>
+            <p data-i18n="great_importance">Nous accordons une grande importance à l'accessibilité de nos ressources à tous. C'est pour cela que les vidéos ont une voix-off, permettant à une personne aveugle ou malvoyante de suivre le tutoriel sans grande difficulté. Pour les personnes sourdes ou malentendantes, la vidéo contient des bulles de texte, ce qui leur permettent de lire et de comprendre tous les contenus de ce site.</p>
         </div>
         <div class="quest">
-            <h2>Comment faire si je ne trouve pas le contenu qui m'intéresse ?</h2>
-            <p>Nous avons à votre disposition un chatbot qui permet de répondre à vos questions. Pour cela, vous devez cliquer sur le cercle en bas à droite de votre écran, puis écrire la question que vous vous posez.</p>
+            <h2 data-i18n="dont_find">Comment faire si je ne trouve pas le contenu qui m'intéresse ?</h2>
+            <p data-i18n="chatbot">Nous avons à votre disposition un chatbot qui permet de répondre à vos questions. Pour cela, vous devez cliquer sur le cercle en bas à droite de votre écran, puis écrire la question que vous vous posez.</p>
         </div>
         <div class="quest">
-            <h2>Sur quels réseaux sociaux pouvons-nous vous retrouver ?</h2>
-            <p>Nous sommes actifs sur plusieurs réseaux sociaux : <a href="https://www.instagram.com/?hl=fr">Instagram</a>, <a href="https://www.facebook.com">Facebook</a>, <a href="https://www.linkedin.com/in/dylan-dumont-97ab64271/">Linkedin</a> et <a href="https://www.youtube.com/channel/UCbwy3M3Ukf2G-NimqT5_Wbg">Youtube</a>. Vous pouvez vous y rendre via votre navigateur, vos applications ou en cliquant sur les liens précédents.</p>
+            <h2 data-i18n="what_network">Sur quels réseaux sociaux pouvons-nous vous retrouver ?</h2>
+            <p data-i18n="where_social_network">Nous sommes actifs sur plusieurs réseaux sociaux : <a href="https://www.instagram.com/?hl=fr">Instagram</a>, <a href="https://www.facebook.com">Facebook</a>, <a href="https://www.linkedin.com/in/dylan-dumont-97ab64271/">Linkedin</a> et <a href="https://www.youtube.com/channel/UCbwy3M3Ukf2G-NimqT5_Wbg">Youtube</a>. Vous pouvez vous y rendre via votre navigateur, vos applications ou en cliquant sur les liens précédents.</p>
         </div>
         <div class="quest">
-            <h2>Comment puis-je vous contacter en cas de problème ou de question ?</h2>
-            <p>Vous pouvez nous contacter en utilisant le formulaire de contact sur notre site web. Ce formulaire est disponible en bas de la page 'A propos' de notre site web.<br/><a href="about.html">Accéder à la page contenant le formulaire de contact</a></p>
+            <h2 data-i18n="contacte">Comment puis-je vous contacter en cas de problème ou de question ?</h2>
+            <p data-i18n="form_contacte">Vous pouvez nous contacter en utilisant le formulaire de contact sur notre site web. Ce formulaire est disponible en bas de la page 'A propos' de notre site web.<br/><a href="about.html" data-i18n="page_form">Accéder à la page contenant le formulaire de contact</a></p>
         </div>
     </section>
 
@@ -180,33 +191,33 @@
         <div class="container d-flex flex-column align-items-center">
             <div class="link-container">
                 <ul class="d-flex">
-                    <li><a class="fs-4 menu__link fw-medium" href="index.php">Accueil</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="about.html">A propos</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="ressource.html">Ressources</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="politique.html">Politique de confidentialité</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="legal.html">Mentions légales</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="legal.html" data-i18n="legal_notice">Mentions légales</a></li>
                 </ul>
             </div>
 
             <div class="link-container_992 d-flex flex-column align-items-center none">
                 <div class="top">
                     <ul class="d-flex">
-                        <li><a class="fs-3 menu__link fw-medium" href="index.php">Accueil</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-3 menu__link fw-medium" href="about.html">A propos</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-3 menu__link fw-medium" href="ressource.html">Ressources</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
                     </ul>
                 </div>
                 <div class="bot">
                     <ul class="d-flex">
-                        <li><a class="fs-3 menu__link fw-medium" href="politique.html">Politique de confidentialité</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-3 menu__link fw-medium" href="legal.html">Mentions légales</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="legal.html" data-i18n="legal_notice">Mentions légales</a></li>
                     </ul>
                 </div>
             </div>
@@ -223,5 +234,6 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/translate.js"></script>
+    <script src="./assets/js/script_chatbot.js"></script>
 </body>
 </html>

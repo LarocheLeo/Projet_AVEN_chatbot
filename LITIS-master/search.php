@@ -82,7 +82,7 @@ else {
 
         <div class="burger-active exclude-accessibility" id="burger-menu">
             <button class="exclude-accessibility">
-                <p class="exclude-accessibility">Menu</p>
+                <p class="exclude-accessibility" data-i18n="menu">Menu</p>
                 <span class="exclude-accessibility"></span>
             </button>
         </div>
@@ -105,7 +105,7 @@ else {
             
             <div class="burger-active exclude-accessibility" id="burger-menu-phone">
                 <button class="exclude-accessibility">
-                    <p class="exclude-accessibility">Menu</p>
+                    <p class="exclude-accessibility" data-i18n="menu">Menu</p>
                     <span class="exclude-accessibility"></span>
                 </button>
             </div>
@@ -218,33 +218,33 @@ else {
         <div class="container d-flex flex-column align-items-center">
             <div class="link-container">
                 <ul class="d-flex">
-                    <li><a class="fs-4 menu__link fw-medium" href="index.php">Accueil</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="about.html">A propos</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="ressource.html">Ressources</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="politique.html">Politique de confidentialité</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="legal.html">Mentions légales</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="legal.html" data-i18n="legal_notice">Mentions légales</a></li>
                 </ul>
             </div>
 
             <div class="link-container_992 d-flex flex-column align-items-center none">
                 <div class="top">
                     <ul class="d-flex">
-                        <li><a class="fs-3 menu__link fw-medium" href="index.php">Accueil</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-3 menu__link fw-medium" href="about.html">A propos</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-3 menu__link fw-medium" href="ressource.html">Ressources</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
                     </ul>
                 </div>
                 <div class="bot">
                     <ul class="d-flex">
-                        <li><a class="fs-3 menu__link fw-medium" href="politique.html">Politique de confidentialité</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-3 menu__link fw-medium" href="legal.html">Mentions légales</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="legal.html" data-i18n="legal_notice">Mentions légales</a></li>
                     </ul>
                 </div>
             </div>

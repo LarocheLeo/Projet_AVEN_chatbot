@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/style_chat.css">
     <link rel="stylesheet" href="./assets/css/mentions.css">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://kit.fontawesome.com/96e027db6d.js" crossorigin="anonymous"></script>
@@ -63,9 +64,9 @@ section.mentions ul li {
         </div>
         <nav class="navbar navbar-expand-lg">
             <ul class="d-flex justify-content-center align-items-center">
-                <li><a class="fs-3 menu__link fw-semibold" href="index.php">Accueil</a></li>
-                <li><a class="fs-3 menu__link fw-semibold" href="about.html">A propos</a></li>
-                <li><a class="fs-3 menu__link fw-semibold" href="ressource.html">Ressources</a></li>
+                <li><a class="fs-3 menu__link fw-semibold" href="index.php" data-i18n="home">Accueil</a></li>
+                <li><a class="fs-3 menu__link fw-semibold" href="about.html" data-i18n="about">A propos</a></li>
+                <li><a class="fs-3 menu__link fw-semibold" href="ressource.html" data-i18n="resources">Ressources</a></li>
             </ul>
         </nav>
 
@@ -82,18 +83,18 @@ section.mentions ul li {
             </a>
         </form>
 
-        <div class="burger-active" id="burger-menu">
-            <button>
-                <p>Menu</p>
-                <span></span>
+        <div class="burger-active exclude-accessibility" id="burger-menu">
+            <button class="exclude-accessibility">
+                <p class="exclude-accessibility" data-i18n="menu">Menu</p>
+                <span class="exclude-accessibility"></span>
             </button>
         </div>
 
         <div id="menu">
             <ul>
-                <li><a class="fs-3 fw-bold menu__link fw-semibold" href="index.php">Accueil</a></li>
-                <li><a class="fs-3 fw-bold menu__link fw-semibold" href="about.html">A propos</a></li>
-                <li><a class="fs-3 fw-bold menu__link fw-semibold" href="ressource.html">Ressources</a></li>
+                <li><a class="fs-3 fw-bold menu__link fw-semibold" href="index.php" data-i18n="home">Accueil</a></li>
+                <li><a class="fs-3 fw-bold menu__link fw-semibold" href="about.html" data-i18n="about">A propos</a></li>
+                <li><a class="fs-3 fw-bold menu__link fw-semibold" href="ressource.html" data-i18n="resources">Ressources</a></li>
             </ul>
         </div>
     </header>
@@ -105,18 +106,18 @@ section.mentions ul li {
                 <a href="index.php"><img class="img-fluid" src="./assets/images/logo/Logo_principal.png" alt="Logo principal du site existence numérique"></a>
             </div>
             
-            <div class="burger-active" id="burger-menu-phone">
-                <button>
-                    <p>Menu</p>
-                    <span></span>
+            <div class="burger-active exclude-accessibility" id="burger-menu-phone">
+                <button class="exclude-accessibility">
+                    <p class="exclude-accessibility" data-i18n="menu">Menu</p>
+                    <span class="exclude-accessibility"></span>
                 </button>
             </div>
     
             <div id="menu-phone">
                 <ul>
-                    <li><a class="fs-3 fw-bold menu__link fw-semibold" href="index.php">Accueil</a></li>
-                    <li><a class="fs-3 fw-bold menu__link fw-semibold" href="about.html">A propos</a></li>
-                    <li><a class="fs-3 fw-bold menu__link fw-semibold" href="ressource.html">Ressources</a></li>
+                    <li><a class="fs-3 fw-bold menu__link fw-semibold" href="index.php" data-i18n="home">Accueil</a></li>
+                    <li><a class="fs-3 fw-bold menu__link fw-semibold" href="about.html" data-i18n="about">A propos</a></li>
+                    <li><a class="fs-3 fw-bold menu__link fw-semibold" href="ressource.html" data-i18n="resources">Ressources</a></li>
                 </ul>
             </div>
         </div>
@@ -162,42 +163,53 @@ section.mentions ul li {
         </div>
     </div>
 
+    <!-- chatbot -->
     <div id="chatbot" class="chatbot d-flex justify-content-center align-items-center">
-        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="Avatar du Chatbot">
+        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="avatar du chatbot">
         <i id="croix" class="fa-solid fa-xmark" style="display:none"></i>
-    </div>
+         <div id="container_chat">
+            <div class="init" data-i18n="aven_chatbot"><p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p>
+                Je peux répondre à vos questions relatives à la recherche des ressources qui ont été mises,
+                sur la plateforme pour vous aider dans vos demarches en ligne. Dans les langues proposer par la plateforme.</div>
+            <div id="repo"></div>
+            <div class="class_input">
+                <input type="text" id="question_input" placeholder="Posez votre question">
+                <button id="poser_question_btn" onclick="question()"><img class="icon_send" src="assets/images/icone_chat/icone_envoye4.png" alt="" srcset=""></button>
+            </div>
+        </div>
+   </div>
     
     <section class="mentions">
-        <h1>Mentions Légales</h1>
+        <h1 data-i18n="legal_notice">Mentions Légales</h1>
         
-        <h2>1. Éditeur du site</h2>
-        <p><strong>Nom du Site :</strong> [Nom de votre site]</p>
-        <p><strong>URL du Site :</strong> [www.votre-site.com]</p>
-        <p><strong>Responsable de la publication :</strong> [Votre nom ou celui du responsable de la publication]</p>
-        <p><strong>Adresse :</strong> [Votre adresse ou celle de votre entreprise]</p>
-        <p><strong>Téléphone :</strong> [Votre numéro de téléphone]</p>
-        <p><strong>Email :</strong> [Votre adresse email]</p>
-        <p><strong>Numéro de SIRET :</strong> [Votre numéro de SIRET si vous êtes en France]</p>
-        <p><strong>RCS :</strong> [Numéro de registre du commerce et des sociétés, le cas échéant]</p>
-        <p><strong>Hébergeur :</strong> [Nom de l'hébergeur, adresse, numéro de téléphone, email]</p>
+        <h2 data-i18n="editor">1. Éditeur du site</h2>
+        <p data-i18n="name_web"><strong>Nom du Site :</strong> [Nom de votre site]</p>
+        <p data-i18n="url_web"><strong>URL du Site :</strong> [www.votre-site.com]</p>
+        <p data-i18n="publication_manager"><strong>Responsable de la publication :</strong> [Votre nom ou celui du responsable de la publication]</p>
+        <p data-i18n="addres"><strong>Adresse :</strong> [Votre adresse ou celle de votre entreprise]</p>
+        <p data-i18n="phone"><strong>Téléphone :</strong> [Votre numéro de téléphone]</p>
+        <p data-i18n="mail"><strong>Email :</strong> [Votre adresse email]</p>
+        <p data-i18n="siret_number"><strong>Numéro de SIRET :</strong> [Votre numéro de SIRET si vous êtes en France]</p>
+        <p data-i18n="rcs"><strong>RCS :</strong> [Numéro de registre du commerce et des sociétés, le cas échéant]</p>
+        <p data-i18n="host"><strong>Hébergeur :</strong> [Nom de l'hébergeur, adresse, numéro de téléphone, email]</p>
 
-        <h2>2. Propriété intellectuelle</h2>
-        <p>Le contenu présent sur ce site, incluant mais ne se limitant pas aux textes, images, graphismes, logos, icônes, sons, logiciels, est la propriété exclusive de [Nom de votre entreprise ou de vous-même] ou de ses partenaires. Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ces éléments, même partielle, est strictement interdite sans l'accord exprès par écrit de [Nom de votre entreprise ou de vous-même]. Cette représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon sanctionnée par le Code de la propriété intellectuelle.</p>
+        <h2 data-i18n="intellectual_property">2. Propriété intellectuelle</h2>
+        <p data-i18n="rule_ip">Le contenu présent sur ce site, incluant mais ne se limitant pas aux textes, images, graphismes, logos, icônes, sons, logiciels, est la propriété exclusive de [Nom de votre entreprise ou de vous-même] ou de ses partenaires. Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ces éléments, même partielle, est strictement interdite sans l'accord exprès par écrit de [Nom de votre entreprise ou de vous-même]. Cette représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon sanctionnée par le Code de la propriété intellectuelle.</p>
 
-        <h2>3. Collecte de données personnelles</h2>
-        <p>En conformité avec la loi Informatique et Libertés du 6 janvier 1978 modifiée et le Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression, d'opposition et de portabilité des données vous concernant. Vous pouvez exercer ce droit en envoyant un email à [Votre adresse email] ou un courrier à l'adresse suivante : [Votre adresse postale].</p>
+        <h2 data-i18n="collection_of_personal_data">3. Collecte de données personnelles</h2>
+        <p data-i18n="rule_copd">En conformité avec la loi Informatique et Libertés du 6 janvier 1978 modifiée et le Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression, d'opposition et de portabilité des données vous concernant. Vous pouvez exercer ce droit en envoyant un email à [Votre adresse email] ou un courrier à l'adresse suivante : [Votre adresse postale].</p>
 
-        <h2>4. Cookies</h2>
-        <p>Le site [Nom de votre site] peut être amené à vous demander l'acceptation des cookies pour des besoins de statistiques et d'affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez. Il contient plusieurs données qui sont stockées sur votre ordinateur dans un simple fichier texte auquel un serveur accède pour lire et enregistrer des informations.</p>
+        <h2 data-i18n="cookies">4. Cookies</h2>
+        <p data-i18n="rule_cookies">Le site [Nom de votre site] peut être amené à vous demander l'acceptation des cookies pour des besoins de statistiques et d'affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez. Il contient plusieurs données qui sont stockées sur votre ordinateur dans un simple fichier texte auquel un serveur accède pour lire et enregistrer des informations.</p>
 
-        <h2>5. Liens hypertextes</h2>
-        <p>Le site [Nom de votre site] peut contenir des liens hypertextes vers d'autres sites. Cependant, [Nom de votre entreprise ou de vous-même] n'a pas la possibilité de vérifier le contenu des sites ainsi visités, et n'assumera en conséquence aucune responsabilité de ce fait.</p>
+        <h2 data-i18n="hyperlinks">5. Liens hypertextes</h2>
+        <p data-i18n="rule_hpl">Le site [Nom de votre site] peut contenir des liens hypertextes vers d'autres sites. Cependant, [Nom de votre entreprise ou de vous-même] n'a pas la possibilité de vérifier le contenu des sites ainsi visités, et n'assumera en conséquence aucune responsabilité de ce fait.</p>
 
-        <h2>6. Limitation de responsabilité</h2>
-        <p>Les informations contenues sur le site [Nom de votre site] sont aussi précises que possibles et le site est périodiquement remis à jour, mais peut toutefois contenir des inexactitudes ou des omissions. Si vous constatez une lacune, erreur ou ce qui paraît être un dysfonctionnement, merci de bien vouloir le signaler par email à [Votre adresse email] en décrivant le problème de la manière la plus précise possible.</p>
+        <h2 data-i18n="limitation_of_liability">6. Limitation de responsabilité</h2>
+        <p data-i18n="rule_lol">Les informations contenues sur le site [Nom de votre site] sont aussi précises que possibles et le site est périodiquement remis à jour, mais peut toutefois contenir des inexactitudes ou des omissions. Si vous constatez une lacune, erreur ou ce qui paraît être un dysfonctionnement, merci de bien vouloir le signaler par email à [Votre adresse email] en décrivant le problème de la manière la plus précise possible.</p>
 
-        <h2>7. Droit applicable et attribution de juridiction</h2>
-        <p>Tout litige en relation avec l'utilisation du site [Nom de votre site] est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de [Votre ville ou siège de votre entreprise].</p>
+        <h2 data-i18n="appli_law_and_juris">7. Droit applicable et attribution de juridiction</h2>
+        <p data-i18n="rule_alj">Tout litige en relation avec l'utilisation du site [Nom de votre site] est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de [Votre ville ou siège de votre entreprise].</p>
     </section>
 
     <!-- footer -->
@@ -205,33 +217,33 @@ section.mentions ul li {
         <div class="container d-flex flex-column align-items-center">
             <div class="link-container">
                 <ul class="d-flex">
-                    <li><a class="fs-4 menu__link fw-medium" href="index.php">Accueil</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="about.html">A propos</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="ressource.html">Ressources</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="politique.html">Politique de confidentialité</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="legal.html">Mentions légales</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="legal.html" data-i18n="Mentions légales">Mentions légales    </a></li>
                 </ul>
             </div>
 
             <div class="link-container_992 d-flex flex-column align-items-center none">
                 <div class="top">
                     <ul class="d-flex">
-                        <li><a class="fs-3 menu__link fw-medium" href="index.php">Accueil</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-3 menu__link fw-medium" href="about.html">A propos</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-3 menu__link fw-medium" href="ressource.html">Ressources</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
                     </ul>
                 </div>
                 <div class="bot">
                     <ul class="d-flex">
-                        <li><a class="fs-3 menu__link fw-medium" href="politique.html">Politique de confidentialité</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-3 menu__link fw-medium" href="legal.html">Mentions légales</a></li>
+                        <li><a class="fs-3 menu__link fw-medium" href="legal.html" data-i18n="legal_notice">Mentions légales</a></li>
                     </ul>
                 </div>
             </div>
@@ -248,5 +260,6 @@ section.mentions ul li {
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/translate.js"></script>
+    <script src="./assets/js/script_chatbot.js"></script>
 </body>
 </html>

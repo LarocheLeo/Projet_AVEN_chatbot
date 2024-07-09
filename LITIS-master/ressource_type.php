@@ -48,6 +48,7 @@ try {
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/ressource_type.css">
+    <link rel="stylesheet" href="./assets/css/style_chat.css">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://kit.fontawesome.com/96e027db6d.js" crossorigin="anonymous"></script>
     <!-- langue -->
@@ -87,7 +88,7 @@ try {
         </form>
         <div class="burger-active exclude-accessibility" id="burger-menu">
             <button class="exclude-accessibility">
-                <p class="exclude-accessibility">Menu</p>
+                <p class="exclude-accessibility"  data-i18n="menu">Menu</p>
                 <span class="exclude-accessibility"></span>
             </button>
         </div>
@@ -106,7 +107,7 @@ try {
             </div>
             <div class="burger-active exclude-accessibility" id="burger-menu-phone">
                 <button class="exclude-accessibility">
-                    <p class="exclude-accessibility">Menu</p>
+                    <p class="exclude-accessibility"  data-i18n="menu">Menu</p>
                     <span class="exclude-accessibility"></span>
                 </button>
             </div>
@@ -161,10 +162,22 @@ try {
         </div>
     </div>
 
-    <div id="chatbot" class="chatbot d-flex justify-content-center align-items-center">
-        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="Avatar du Chatbot">
+     <!-- chatbot -->
+     <div id="chatbot" class="chatbot d-flex justify-content-center align-items-center">
+        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="avatar du chatbot">
         <i id="croix" class="fa-solid fa-xmark" style="display:none"></i>
-    </div>
+         <div id="container_chat">
+            <div class="init" data-i18n="aven_chatbot"><p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p>
+                Je peux répondre à vos questions relatives à la recherche des ressources qui ont été mises,
+                sur la plateforme pour vous aider dans vos demarches en ligne. Dans les langues proposer par la plateforme.</div>
+            <div id="repo"></div>
+            <div class="class_input">
+                <input type="text" id="question_input" placeholder="Posez votre question">
+                <button id="poser_question_btn" onclick="question()"><img class="icon_send" src="assets/images/icone_chat/icone_envoye4.png" alt="" srcset=""></button>
+            </div>
+        </div>
+   </div>
+
 
     <!-- Titre -->
     <div class="title">
@@ -220,7 +233,7 @@ try {
     <div class="container text-center">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <a href="<?php echo htmlspecialchars($download_link); ?>" download><button class="btn fw-bold btn-resource">Télécharger</button></a>
+                <a href="<?php echo htmlspecialchars($download_link); ?>" download><button class="btn fw-bold btn-resource" data-i18n="download">Télécharger</button></a>
             </div>
         </div>
     </div>
@@ -230,33 +243,33 @@ try {
         <div class="d-flex flex-column align-items-center">
             <div class="link-container">
                 <ul class="d-flex">
-                    <li><a class="fs-4 menu__link fw-medium" href="index.php">Accueil</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="about.html">A propos</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="ressource.html">Ressources</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="politique.html">Politique de confidentialité</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
                     <div class="separator"></div>
-                    <li><a class="fs-4 menu__link fw-medium" href="legal.html">Mentions légales</a></li>
+                    <li><a class="fs-4 menu__link fw-medium" href="legal.html" data-i18n="legal_notice">Mentions légales</a></li>
                 </ul>
             </div>
 
             <div class="link-container_992 d-flex flex-column align-items-center none">
                 <div class="top">
                     <ul class="d-flex">
-                        <li><a class="fs-4 menu__link fw-medium" href="index.php">Accueil</a></li>
+                        <li><a class="fs-4 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-4 menu__link fw-medium" href="about.html">A propos</a></li>
+                        <li><a class="fs-4 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-4 menu__link fw-medium" href="ressource.html">Ressources</a></li>
+                        <li><a class="fs-4 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
                     </ul>
                 </div>
                 <div class="bot">
                     <ul class="d-flex">
-                        <li><a class="fs-4 menu__link fw-medium" href="politique.html">Politique de confidentialité</a></li>
+                        <li><a class="fs-4 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-4 menu__link fw-medium" href="legal.html">Mentions légales</a></li>
+                        <li><a class="fs-4 menu__link fw-medium" href="legal.html" data-i18n="legal_notice">Mentions légales</a></li>
                     </ul>
                 </div>
             </div>
@@ -271,6 +284,7 @@ try {
     </footer>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script_chatbot.js"></script>
     <script src="./assets/js/translate.js"></script>
 </body>
 </html>

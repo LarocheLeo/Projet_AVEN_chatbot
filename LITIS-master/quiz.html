@@ -43,9 +43,19 @@
                 </lord-icon>
             </a>
         </form>
+            <!-- langue -->
+        <div class="language-selector exclude-accessibility">
+            <button class="dropbtn exclude-accessibility" id="selected-lang">FR</button>
+            <div class="dropdown-content" id="language-menu">
+                <a href="#" data-lang="fr">FR : Français</a>
+                <a href="#" data-lang="en">EN : English</a>
+                <a href="#" data-lang="es">ES : Español</a>
+                <a href="#" data-lang="de">DE : Deutsch</a>
+            </div>
+        </div>
         <div class="burger-active exclude-accessibility" id="burger-menu">
             <button class="exclude-accessibility">
-                <p class="exclude-accessibility">Menu</p>
+                <p class="exclude-accessibility" data-i18n="menu">Menu</p>
                 <span class="exclude-accessibility"></span>
             </button>
         </div>
@@ -64,7 +74,7 @@
             </div>
             <div class="burger-active exclude-accessibility" id="burger-menu-phone">
                 <button class="exclude-accessibility">
-                    <p class="exclude-accessibility">Menu</p>
+                    <p class="exclude-accessibility" data-i18n="menu">Menu</p>
                     <span class="exclude-accessibility"></span>
                 </button>
             </div>
@@ -162,14 +172,14 @@
             <div id="score"></div>
         </div>
         <div id="quiz"></div>
-        <button id="submit">Valider</button>
-        <button id="next" style="display:none;">Continuer</button>
+        <button id="submit" data-i18n="confirm">Valider</button>
+        <button id="next" style="display:none;" data-i18n="continue">Continuer</button>
         <div id="results"></div>
-        <button id="restart" style="display: none;">Recommencer</button>
+        <button id="restart" style="display: none;" data-i18n="restart">Recommencer</button>
     </div>
 
     <div class="backlink">
-        <a id="backlink" href="#">Revenir à la catégorie</a>
+        <a id="backlink" href="#" data-i18n="back">Revenir à la catégorie</a>
     </div>
 
 
@@ -269,7 +279,7 @@
             backlink.href = 'index.php';
         }
     </script>
-
+    <script src="./assets/js/translate.js"></script>
 
 </body>
 </html>

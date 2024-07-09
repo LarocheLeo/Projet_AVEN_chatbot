@@ -24,6 +24,7 @@ $results = $statement->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/style_chat.css">
     <link rel="stylesheet" href="./assets/css/glossaire.css">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://kit.fontawesome.com/96e027db6d.js" crossorigin="anonymous"></script>
@@ -66,7 +67,7 @@ $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
         <div class="burger-active exclude-accessibility" id="burger-menu">
             <button class="exclude-accessibility">
-                <p class="exclude-accessibility">Menu</p>
+                <p class="exclude-accessibility" data-i18n="menu">Menu</p>
                 <span class="exclude-accessibility"></span>
             </button>
         </div>
@@ -89,7 +90,7 @@ $results = $statement->fetchAll(PDO::FETCH_ASSOC);
             
             <div class="burger-active exclude-accessibility" id="burger-menu-phone">
                 <button class="exclude-accessibility">
-                    <p class="exclude-accessibility">Menu</p>
+                    <p class="exclude-accessibility" data-i18n="menu">Menu</p>
                     <span class="exclude-accessibility"></span>
                 </button>
             </div>
@@ -149,18 +150,29 @@ $results = $statement->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 
-    <!-- chatbot -->
-    <div id="chatbot" class="chatbot d-flex justify-content-center align-items-center">
-        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="Avatar du Chatbot">
+     <!-- chatbot -->
+     <div id="chatbot" class="chatbot d-flex justify-content-center align-items-center">
+        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="avatar du chatbot">
         <i id="croix" class="fa-solid fa-xmark" style="display:none"></i>
-    </div>
+         <div id="container_chat">
+            <div class="init" data-i18n="aven_chatbot"><p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p>
+                Je peux répondre à vos questions relatives à la recherche des ressources qui ont été mises,
+                sur la plateforme pour vous aider dans vos demarches en ligne. Dans les langues proposer par la plateforme.</div>
+            <div id="repo"></div>
+            <div class="class_input">
+                <input type="text" id="question_input" placeholder="Posez votre question">
+                <button id="poser_question_btn" onclick="question()"><img class="icon_send" src="assets/images/icone_chat/icone_envoye4.png" alt="" srcset=""></button>
+            </div>
+        </div>
+   </div>
+
 
 
 
     <!-- titre -->
     <section class="container title d-flex flex-column align-items-center">
-        <h1>Glossaire</h1>
-        <p class="fs-4">Ici, vous pouvez accéder, apprendre et découvrir tous les termes en lien avec le web.</p>
+        <h1 data-i18n="title_glossary">Glossaire</h1>
+        <p class="fs-4" data-i18n="dico">Ici, vous pouvez accéder, apprendre et découvrir tous les termes en lien avec le web.</p>
         <div class="big_search exclude-accessibility">
             <input type="text" id="big-search-input" placeholder="Rechercher..." class="exclude-accessibility">
             <a href="#" aria-labelledby="search-input">
@@ -179,7 +191,7 @@ $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
     <section class="container glossaire d-flex flex-column align-items-center">
         <ul class="filtre d-flex justify-content-center align-items-center">
-            <li class="list filtre-active" data-filter="All">Tout</li>
+            <li class="list filtre-active" data-filter="All" data-i18n="all">Tout</li>
             <li class="list" data-filter="A">A</li>
             <li class="list" data-filter="B">B</li>
             <li class="list" data-filter="C">C</li>
@@ -330,7 +342,8 @@ $results = $statement->fetchAll(PDO::FETCH_ASSOC);
     </footer>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-
+    <script src="./assets/js/script_chatbot.js"></script>
+    <script src="./assets/js/translate.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 

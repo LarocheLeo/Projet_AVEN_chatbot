@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/style_chat.css">
     <link rel="stylesheet" href="./assets/css/categorie.css">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://kit.fontawesome.com/96e027db6d.js" crossorigin="anonymous"></script>
@@ -47,7 +48,7 @@
 
         <div class="burger-active exclude-accessibility" id="burger-menu">
             <button class="exclude-accessibility">
-                <p class="exclude-accessibility">Menu</p>
+                <p class="exclude-accessibility" data-i18n="menu">Menu</p>
                 <span class="exclude-accessibility"></span>
             </button>
         </div>
@@ -70,7 +71,7 @@
             
             <div class="burger-active exclude-accessibility" id="burger-menu-phone">
                 <button class="exclude-accessibility">
-                    <p class="exclude-accessibility">Menu</p>
+                    <p class="exclude-accessibility" data-i18n="menu">Menu</p>
                     <span class="exclude-accessibility"></span>
                 </button>
             </div>
@@ -130,11 +131,22 @@
         </div>
     </div>
 
-    <!-- chatbot -->
+     <!-- chatbot -->
     <div id="chatbot" class="chatbot d-flex justify-content-center align-items-center">
-        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="Avatar du Chatbot">
+        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="avatar du chatbot">
         <i id="croix" class="fa-solid fa-xmark" style="display:none"></i>
-    </div>
+         <div id="container_chat">
+            <div class="init" data-i18n="aven_chatbot"><p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p>
+                Je peux répondre à vos questions relatives à la recherche des ressources qui ont été mises,
+                sur la plateforme pour vous aider dans vos demarches en ligne. Dans les langues proposer par la plateforme.</div>
+            <div id="repo"></div>
+            <div class="class_input">
+                <input type="text" id="question_input" placeholder="Posez votre question">
+                <button id="poser_question_btn" onclick="question()"><img class="icon_send" src="assets/images/icone_chat/icone_envoye4.png" alt="" srcset=""></button>
+            </div>
+        </div>
+   </div>
+
 
     <!-- section intro -->
     <section class="intro">
@@ -144,9 +156,9 @@
             </svg>
         </div>
         <div class="intro-container d-flex flex-column align-items-center">
-            <h1 class="exclude-accessibility text">Santé</h1>
+            <h1 class="exclude-accessibility text" data-i18n="health_cat">Santé</h1>
             <div class="trait exclude-accessibility"></div>
-            <p class="exclude-accessibility text">Vous désirez prendre un rendez-vous médical, mais cela vous semble trop compliqué ? Ne vous inquiétez pas, ici, vous trouverez les réponses à toutes vos questions.</p>
+            <p class="exclude-accessibility text" data-i18n="intro_health">Vous désirez prendre un rendez-vous médical, mais cela vous semble trop compliqué ? Ne vous inquiétez pas, ici, vous trouverez les réponses à toutes vos questions.</p>
         </div>
     </section>
 
@@ -162,7 +174,7 @@
 
         if ($result->rowCount() > 0) {
             echo "<div class='rdv'>";
-            echo "<h2>Rendez-vous médical</h2>";
+            echo "<h2 data-i18n='medecin_rdv'>Rendez-vous médical</h2>";
             echo "<div class='trait-vert exclude-accessibility'></div>";
             echo "<div class='videos'>";
             while($row = $result->fetch(PDO::FETCH_ASSOC)) {
@@ -188,7 +200,7 @@
 
         if ($result_sante->rowCount() > 0) {
             echo "<div class='rdv'>";
-            echo "<h2>Santé en ligne</h2>";
+            echo "<h2 data-i18n='online_health'>Santé en ligne</h2>";
             echo "<div class='trait-vert exclude-accessibility'></div>";
             echo "<div class='videos'>";
             while ($row_sante = $result_sante->fetch(PDO::FETCH_ASSOC)) {
@@ -211,12 +223,12 @@
 
 
     <div class="quiz">
-        <h2>Quiz</h2>
+        <h2 data-i18n="title_quiz">Quiz</h2>
         <div class="trait-vert exclude-accessibility"></div>
         <div class="texte-img-quiz">
             <div class="texte-quiz">
-                <p class="fs-4 fw-medium">Il est grand temps de vous exercer afin de savoir si vous avez bien suivi les ressources de la catégorie <span class="color_san">santé </span>!</p>
-                <button onclick="window.location.href='quiz.html?category=sante&source=categorie-sante.php'" class="btn fw-bold btn-quiz">Faire le quiz</button>
+                <p class="fs-4 fw-medium" data-i18n="go_exo">Il est grand temps de vous exercer afin de savoir si vous avez bien suivi les ressources de la catégorie <span class="color_san" data-i18n="health_cat">santé </span>!</p>
+                <button onclick="window.location.href='quiz.html?category=sante&source=categorie-sante.php'" class="btn fw-bold btn-quiz" data-i18n="go_quiz">Faire le quiz</button>
             </div>
             <div class="img-quiz">
                 <img src="./assets/images/illustration/quiz2.png" alt="Illustration Quiz">
@@ -231,33 +243,33 @@
             <div class="container d-flex flex-column align-items-center">
                 <div class="link-container">
                     <ul class="d-flex">
-                        <li><a class="fs-4 menu__link fw-medium" href="index.php">Accueil</a></li>
+                        <li><a class="fs-4 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-4 menu__link fw-medium" href="about.html">A propos</a></li>
+                        <li><a class="fs-4 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-4 menu__link fw-medium" href="ressource.html">Ressources</a></li>
+                        <li><a class="fs-4 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-4 menu__link fw-medium" href="politique.html">Politique de confidentialité</a></li>
+                        <li><a class="fs-4 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
                         <div class="separator"></div>
-                        <li><a class="fs-4 menu__link fw-medium" href="legal.html">Mentions légales</a></li>
+                        <li><a class="fs-4 menu__link fw-medium" href="legal.html" data-i18n="legal_notice">Mentions légales</a></li>
                     </ul>
                 </div>
     
                 <div class="link-container_992 d-flex flex-column align-items-center none">
                     <div class="top">
                         <ul class="d-flex">
-                            <li><a class="fs-3 menu__link fw-medium" href="index.php">Accueil</a></li>
+                            <li><a class="fs-3 menu__link fw-medium" href="index.php" data-i18n="home">Accueil</a></li>
                             <div class="separator"></div>
-                            <li><a class="fs-3 menu__link fw-medium" href="about.html">A propos</a></li>
+                            <li><a class="fs-3 menu__link fw-medium" href="about.html" data-i18n="about">A propos</a></li>
                             <div class="separator"></div>
-                            <li><a class="fs-3 menu__link fw-medium" href="ressource.html">Ressources</a></li>
+                            <li><a class="fs-3 menu__link fw-medium" href="ressource.html" data-i18n="resources">Ressources</a></li>
                         </ul>
                     </div>
                     <div class="bot">
                         <ul class="d-flex">
-                            <li><a class="fs-3 menu__link fw-medium" href="politique.html">Politique de confidentialité</a></li>
+                            <li><a class="fs-3 menu__link fw-medium" href="politique.html" data-i18n="privacy_policy">Politique de confidentialité</a></li>
                             <div class="separator"></div>
-                            <li><a class="fs-3 menu__link fw-medium" href="legal.html">Mentions légales</a></li>
+                            <li><a class="fs-3 menu__link fw-medium" href="legal.html" data-i18n="legal_notice">Mentions légales</a></li>
                         </ul>
                     </div>
                 </div>
@@ -272,8 +284,9 @@
         </footer>
     
         <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    
+        <script src="./assets/js/translate.js"></script>
         <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/script_chatbot.js"></script>
         
     </body>
     </html>
