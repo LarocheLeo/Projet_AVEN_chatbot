@@ -1,4 +1,5 @@
 {
+    "aven_chatbot": "<p>Hola, soy el asistente virtual de Existence Numerique.</p> <p>Puedo responder a tus preguntas sobre cómo encontrar los recursos que se han puesto en la plataforma para ayudarte con tus trámites online. En los idiomas que ofrece la plataforma.",
     "home": "Inicio",
     "about": "Acerca de",
     "resources": "Recursos",
@@ -77,5 +78,51 @@
 
     "message_label": "Ingrese su mensaje:",
 
-    "submit_btn": "Enviar"
+    "submit_btn": "Enviar",
+
+    "go_exo": "Ya es hora de que practiques para saber si has seguido los recursos de la categoría",
+    "go_quiz": "Haz la prueba",
+    "title_quiz": "Cuestionario",
+    "Administrative_procedures": "Procedimientos administrativos",
+    "menu": "Menú",
+    "intro_admin": "Aquí tienes una lista completa de recursos que te ayudarán a gestionar tus tareas administrativas más fácilmente, sin que te estresen",
+    "intro_sec": "Aquí tiene una lista completa de recursos que le ayudarán a gestionar sus tareas administrativas más fácilmente, sin estrés.",
+    "intro_com": "Aquí tienes algunos recursos que te ayudarán a utilizar las redes sociales o tu bandeja de entrada de correo electrónico con facilidad.",
+    "intro_health": "¿Quiere concertar una cita médica, pero le parece demasiado complicado? No se preocupe, aquí encontrará las respuestas a todas sus preguntas.",
+    "intro_internet": "Aprende a dominar los fundamentos digitales con estos tutoriales fáciles de seguir. Simplifica ya tu vida digital",
+    "intro_education": "Tanto si eres estudiante como si eres padre, descubre cómo navegar fácilmente por las plataformas de educación en línea con estos prácticos tutoriales.",
+
+    "win_pdf": "Este PDF contiene todos los accesos directos para el sistema operativo Windows",
+    "mac_pdf": "Este PDF contiene todos los accesos directos para el sistema operativo Mac",
+    "extension_pdf": "Este PDF contiene todas las extensiones de archivo que necesitas",
+    "crossair_pdf": "En este PDF encontrarás todas las formas de cursor que necesitas",
+    "win_short_cut": "Atajos de Windows",
+    "mac_short_cut": "Atajos de Mac",
+    "extentions": "Extensiones",
+    "crossair": "Formas del cursor",
+    "visit": "Consultar",
+    "description_com": "En esta sección encontrarás todos los recursos que te ayudarán a comunicarte en Internet",
+    "description_health": "En esta sección encontrarás todos los recursos relacionados con la salud",
+    "description_educ": "En esta sección encontrarás todos los recursos relacionados con la educación online",
+    "description_admin": "En esta sección encontrarás todos los recursos necesarios para que tus gestiones administrativas sean un éxito",
+    "description_security": "En esta sección encontrarás todos los recursos que necesitas para garantizar tu seguridad en la red",
+    "description_internet": "En esta sección encontrarás todos los recursos que necesitas para aprender los fundamentos de Internet",
+    "description_faq": "Aquí encontrarás las respuestas a todas tus preguntas",
+    "description_glossary": "Aquí tienes un glosario con todos los términos técnicos que necesitas",
+    "description_resources": "Aquí encontrarás recursos que pueden resultarte útiles",
+    "title_com": "Comunicación",
+    "title_health": "Salud",
+    "title_educ": "Educación",
+    "title_admin": "Administrativo",
+    "title_security": "Seguridad",
+    "title_internet": "Conceptos básicos de Internet",
+    "title_faq": "Preguntas más frecuentes",
+    "title_glossary": "Glosario",
+    "title_resources": "Nuestros <span class='color_v'>recursos descargables",
+    "themes": "Nuestros <span class='color_v'>temas</span>",
+    "more_info": "Más información",
+    "functionalities": "Nuestras otras <span class='color_v'>características",
+    "download_pdf": "Descargar PDF"
+    
+
 }

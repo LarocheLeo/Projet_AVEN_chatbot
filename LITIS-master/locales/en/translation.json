@@ -1,5 +1,6 @@
-{
+{   
     "title": "Welcome",
+    "aven_chatbot": "<p>Hello, I am the virtual assistant of the Existence Numerique.</p> I can answer your questions related to the search of resources that have been put, on the platform to help you in your online demarches. In the languages offered by the platform.",
     "home": "Home",
     "about": "About",
     "resources": "Resources",
@@ -81,6 +82,51 @@
 
     "message_label": "Enter your message:",
 
-    "submit_btn": "Submit"
-}
+    "submit_btn": "Submit",
+
+    "go_exo": "It's time to practice to see if you've followed the resources in the category",
+    "go_quiz": "Take the quiz",
+    "title_quiz": "Quiz",
+    "Administrative_procedures": "Administrative procedures",
+    "menu": "Menu",
+    "intro_admin": "Here's a comprehensive list of resources to help you manage your administrative tasks more easily, without the stress.",
+    "intro_sec": "Here's a comprehensive list of resources to help you manage your administrative tasks more easily, without the stress.",
+    "intro_com": "Here are some resources to help you use social networks or your mailbox with ease.",
+    "intro_health": "Would you like to book a medical appointment, but find it too complicated? Don't worry, you'll find the answers to all your questions here.s",
+    "intro_internet": "Learn to master digital basics with these easy-to-follow tutorials. Simplify your digital life now!",
+    "intro_education": "Whether you're a student or a parent, discover how to navigate online educational platforms easily with these practical tutorials.",
+
+    "win_pdf": "In this PDF you will find all the shortcuts for the Windows operating system",
+    "mac_pdf": "This PDF contains all the shortcuts for the Mac operating system",
+    "extension_pdf": "This PDF contains all the file extensions you need.",
+    "crossair_pdf": "In this PDF you'll find all the cursor shapes you need.",
+    "win_short_cut": "Windows shortcuts",
+    "mac_short_cut": "Mac shortcuts",
+    "extentions": "Extensions",
+    "crossair": "Cursor shapes",
+    "visit": "Consult",
+    "description_com": "In this section you will find all the resources to help you communicate online",
+    "description_health": "In this section you'll find all the resources related to health",
+    "description_educ": "In this section you'll find all the resources related to online education.",
+    "description_admin": "In this section you'll find all the resources you need to successfully complete your administrative tasks.",
+    "description_security": "In this section you'll find all the resources you need to guarantee your security on the web",
+    "description_internet": "In this section you'll find all the resources you need to learn the basics of the Internet",
+    "description_faq": "Here you'll find answers to all your questions.",
+    "description_glossary": "Here's a glossary with all the technical terms you'll need.",
+    "description_resources": "Here you'll find resources that might come in handy.",    "title_com": "Communication",
+    "title_health": "Health",
+    "title_educ": "Education",
+    "title_admin": "Administrative",
+    "title_security": "Security",
+    "title_internet": "Internet basics",
+    "title_faq": "Frequently asked questions",
+    "title_glossary": "Glossary",
+    "title_resources": "Our <span class='color_v'>downloadable resources",
+    "themes": "Our <span class='color_v'>themes</span>",
+    "more_info": "Read more",
+    "functionalities": "Our other <span class='color_v'>features",
+    "download_pdf": "Download PDF"
+    
+
+   }
   

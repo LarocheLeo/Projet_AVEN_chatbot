@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/style_chat.css">
     <link rel="stylesheet" href="./assets/css/politique.css">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://kit.fontawesome.com/96e027db6d.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/script_chatbot.js"></script>
     <!-- langue -->
     <script src="https://unpkg.com/i18next@21.6.13/i18next.min.js"></script>
     <script src="https://unpkg.com/i18next-http-backend@1.4.0/i18nextHttpBackend.min.js"></script>
@@ -122,10 +124,21 @@
         </div>
     </div>
 
+    <!-- chatbot -->
     <div id="chatbot" class="chatbot d-flex justify-content-center align-items-center">
-        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="Avatar du Chatbot">
+        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="avatar du chatbot">
         <i id="croix" class="fa-solid fa-xmark" style="display:none"></i>
-    </div>
+         <div id="container_chat">
+            <div class="init" data-i18n="aven_chatbot"><p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p>
+                Je peux répondre à vos questions relatives à la recherche des ressources qui ont été mises,
+                sur la plateforme pour vous aider dans vos demarches en ligne. Dans les langues proposer par la plateforme.</div>
+            <div id="repo"></div>
+            <div class="class_input">
+                <input type="text" id="question_input" placeholder="Posez votre question">
+                <button id="poser_question_btn" onclick="question()"><img class="icon_send" src="assets/images/icone_chat/icone_envoye4.png" alt="" srcset=""></button>
+            </div>
+        </div>
+   </div>
     
     
     <section class="politique">

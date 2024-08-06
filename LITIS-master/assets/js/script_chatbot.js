@@ -57,7 +57,7 @@ function question(){
     }
     var userInput = document.getElementById("question_input").value;
     var data = JSON.stringify({ question: userInput });
-    xhr.open("POST", "https://chatbot-stage-lchpcgazbq-od.a.run.app/myapi");                        
+    xhr.open("POST", "https://695994ae-6b10-45b5-838d-b9f34b1a4477.app.gra.ai.cloud.ovh.net/myapi");                
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(data);
 }

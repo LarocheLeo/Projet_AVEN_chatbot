@@ -69,6 +69,8 @@ if (!$results) {
     <script src="https://unpkg.com/i18next@21.6.13/i18next.min.js"></script>
     <script src="https://unpkg.com/i18next-http-backend@1.4.0/i18nextHttpBackend.min.js"></script>
     <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+    
+
     <!--  -->
     <title>Existence Numérique | Accueil</title>
 </head>
@@ -176,19 +178,19 @@ if (!$results) {
     </div>
 
     <div id="chatbot" class="chatbot d-flex justify-content-center align-items-center">
-        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="Avatar du Chatbot" >
+        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="avatar du chatbot">
         <i id="croix" class="fa-solid fa-xmark" style="display:none"></i>
-        <div id="container_chat">
-            <div class="init"><p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p>
+         <div id="container_chat">
+            <div class="init" data-i18n="aven_chatbot"><p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p>
                 Je peux répondre à vos questions relatives à la recherche des ressources qui ont été mises,
-                sur la platforme pour vous aider dans vos demarches en ligne.</div>
+                sur la plateforme pour vous aider dans vos demarches en ligne. Dans les langues proposer par la plateforme.</div>
             <div id="repo"></div>
             <div class="class_input">
                 <input type="text" id="question_input" placeholder="Posez votre question">
                 <button id="poser_question_btn" onclick="question()"><img class="icon_send" src="assets/images/icone_chat/icone_envoye4.png" alt="" srcset=""></button>
             </div>
         </div>
-    </div>
+   </div>
 
     <section class="presentation">
         <div class="pre-container d-flex align-items-center">

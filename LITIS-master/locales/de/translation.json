@@ -1,4 +1,5 @@
 {
+    "aven_chatbot": "<p>Hallo, ich bin der virtuelle Assistent der Digitalen Existenz.</p> Ich kann Ihre Fragen bezüglich der Suche nach Ressourcen beantworten, die auf der Plattform bereitgestellt wurden, um Ihnen bei Ihren Online-Angelegenheiten zu helfen. In den Sprachen, die die Plattform anbietet.",
     "home": "Startseite",
     "about": "Über uns",
     "resources": "Ressourcen",
@@ -75,5 +76,50 @@
 
     "message_label": "Geben Sie Ihre Nachricht ein:",
 
-    "submit_btn": "Absenden"
+    "submit_btn": "Absenden",
+    
+    "go_exo": "Es ist höchste Zeit, dass Sie üben, um herauszufinden, ob Sie die Ressourcen der Kategorie richtig beachtet haben.",
+    "go_quiz": "Das Quiz machen",
+    "title_quiz": "Quiz",
+    "Administrative_procedures": "Administrative Schritte",
+    "menu": "Menü",
+    "intro_admin": "Hier finden Sie eine umfassende Liste mit Ressourcen, die Ihnen helfen, Ihre Verwaltungsaufgaben leichter zu bewältigen, ohne dass Sie sich dadurch gestresst fühlen.",
+    "intro_sec": "Hier finden Sie eine umfassende Liste mit Ressourcen, die Ihnen helfen, Ihre Verwaltungsaufgaben leichter zu bewältigen, ohne dass Sie sich dabei stressen.",
+    "intro_com": "Hier finden Sie Ressourcen, die Ihnen helfen, soziale Netzwerke oder Ihr E-Mail-Postfach leichter zu nutzen.",
+    "intro_health": "Sie möchten einen Arzttermin vereinbaren, aber das erscheint Ihnen zu kompliziert? Keine Sorge, hier finden Sie die Antworten auf all Ihre Fragen",
+    "intro_internet": "Lernen Sie mit diesen leicht verständlichen Tutorials, die Grundlagen der digitalen Welt zu beherrschen. Vereinfachen Sie Ihr digitales Leben ab sofort!",
+    "intro_education": "Ob Schüler oder Eltern - mit diesen praktischen Tutorials erfahren Sie, wie einfach Sie auf Online-Bildungsplattformen navigieren können.",
+
+    "win_pdf": "In dieser PDF finden Sie alle Shortcuts für das Betriebssystem Windows.",
+    "mac_pdf": "In diesem PDF finden Sie alle Shortcuts für das Mac-Betriebssystem.",
+    "extension_pdf": "In diesem PDF finden Sie alle Dateierweiterungen, die Sie benötigen.",
+    "crossair_pdf": "In dieser PDF finden Sie alle Cursorformen, die Sie benötigen.",
+    "win_short_cut": "Windows Shortcuts",
+    "mac_short_cut": "Die Mac-Shortcuts",
+    "extentions": "Die Erweiterungen",
+    "crossair": "Die Cursorformen",
+    "visit": "Durchsuchen",
+    "description_com": "In diesem Abschnitt finden Sie alle Ressourcen, die Ihnen bei der Online-Kommunikation helfen.",
+    "description_health": "In diesem Abschnitt finden Sie alle Ressourcen, die mit Gesundheit zu tun haben",
+    "description_educ": "In diesem Abschnitt finden Sie alle Ressourcen, die mit Online-Bildung zu tun haben.",
+    "description_admin": "In diesem Abschnitt finden Sie alle Ressourcen, die Ihnen helfen, Ihre Behördengänge erfolgreich zu erledigen.",
+    "description_security": "In diesem Abschnitt finden Sie alle Ressourcen, die Ihnen helfen, Ihre Sicherheit im Internet zu gewährleisten.",
+    "description_internet": "In diesem Abschnitt finden Sie alle Ressourcen, die Ihnen helfen, die Grundlagen des Internets zu erlernen.",
+    "description_faq": "Hier finden Sie Antworten auf all Ihre Fragen.",
+    "description_glossary": "Hier finden Sie ein Glossar mit allen Fachbegriffen, die Ihnen zur Verfügung stehen.",
+    "description_resources": "Hier finden Sie einige Ressourcen, die für Sie nützlich sein könnten.",
+    "title_com": "Kommunikation",
+    "title_health": "Gesundheit",
+    "title_educ": "Bildung",
+    "title_admin": "Administrativ",
+    "title_security": "Sicherheit",
+    "title_internet": "Grundlagen des Internets",
+    "title_faq": "Häufig gestellte Fragen",
+    "title_glossary": "Glossar",
+    "title_resources": "Unsere <span class='color_v'>herunterladbaren Ressourcen",
+    "themes": "Unsere <span class='color_v'>Themen</span>.",
+    "more_info": "Mehr erfahren",
+    "functionalities": "Unsere anderen <span class='color_v'>Funktionen",
+    "download_pdf": "PDF herunterladen"
+    
 }

@@ -47,7 +47,7 @@
 
         <div class="burger-active exclude-accessibility" id="burger-menu">
             <button class="exclude-accessibility">
-                <p class="exclude-accessibility">Menu</p>
+                <p class="exclude-accessibility" data-i18n="menu">Menu</p>
                 <span class="exclude-accessibility"></span>
             </button>
         </div>
@@ -70,7 +70,7 @@
             
             <div class="burger-active exclude-accessibility" id="burger-menu-phone">
                 <button class="exclude-accessibility">
-                    <p class="exclude-accessibility">Menu</p>
+                    <p class="exclude-accessibility" data-i18n="menu">Menu</p>
                     <span class="exclude-accessibility"></span>
                 </button>
             </div>
@@ -131,44 +131,43 @@
         </div>
     </div>
 
-    <!-- chatbot -->
+        <!-- chatbot -->
     <div id="chatbot" class="chatbot d-flex justify-content-center align-items-center">
-        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="Avatar du Chatbot">
+        <img id='avatar' src="./assets/images/avatar/normal.svg" alt="avatar du chatbot">
         <i id="croix" class="fa-solid fa-xmark" style="display:none"></i>
-        <div id="container_chat">
-            <div class="init"><p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p>
+         <div id="container_chat">
+            <div class="init" data-i18n="aven_chatbot"><p>Bonjour, je suis l'assistant virtuel de l'Existence Numerique.</p>
                 Je peux répondre à vos questions relatives à la recherche des ressources qui ont été mises,
-                sur la platforme pour vous aider dans vos demarches en ligne.</div>
+                sur la plateforme pour vous aider dans vos demarches en ligne. Dans les langues proposer par la plateforme.</div>
             <div id="repo"></div>
             <div class="class_input">
                 <input type="text" id="question_input" placeholder="Posez votre question">
                 <button id="poser_question_btn" onclick="question()"><img class="icon_send" src="assets/images/icone_chat/icone_envoye4.png" alt="" srcset=""></button>
             </div>
         </div>
-    </div>
-
+   </div>
 
     <!-- section fonctionnalité -->
 
     <section class="fonctionnalite">
-        <h2>Nos autres <span class="color_v">fonctionnalités</span></h2>
+        <h2 data-i18n="functionalities">Nos autres <span class="color_v">fonctionnalités</span></h2>
         <!-- <div class="underline big_title_underline"></div> -->
         <div class="container d-flex justify-content-between">
             <div class="fonc_box mg_r mg_b first-mg_b exclude-accessibility BonW">
                 <div class="top d-flex justify-content-between">
                     <div class="title">
-                        <h3 class="exclude-accessibility text">Glossaire</h3>
+                        <h3 class="exclude-accessibility text" data-i18n="title_glossary">Glossaire</h3>
                         <div class="underline title_underline exclude-accessibility"></div>
                     </div>
                     <img class="img-fluid" src="./assets/images/illustration/glossaire2.png" alt="Illustration glossaire">
                 </div>
 
                 <div class="bot">
-                    <p class="fs-5 exclude-accessibility text">
+                    <p class="fs-5 exclude-accessibility text" data-i18n="description_glossary">
                         Voici un glossaire avec tous les termes techniques à votre disposition.
                     </p>
                     <a href="glossaire.php">
-                        <button class="exclude-accessibility BonW">En savoir plus</button>
+                        <button class="exclude-accessibility BonW" data-i18n="more_info">En savoir plus</button>
                     </a>
                 </div>
             </div>
@@ -176,18 +175,18 @@
             <div class="fonc_box exclude-accessibility BonW">
                 <div class="top d-flex justify-content-between">
                     <div class="title">
-                        <h3 class="exclude-accessibility text">Foire aux questions</h3>
+                        <h3 class="exclude-accessibility text" data-i18n="title_faq">Foire aux questions</h3>
                         <div class="underline title_underline exclude-accessibility"></div>
                     </div>
                     <img class="img-fluid" src="./assets/images/illustration/LITIS faq.png" alt="Illustration foire aux questions">
                 </div>
 
                 <div class="bot">
-                    <p class="fs-5 pmg_b exclude-accessibility text">
+                    <p class="fs-5 pmg_b exclude-accessibility text" data-i18n="description_faq">
                         Vous trouverez ici les réponses à toutes vos questions.
                     </p>
                     <a href="faq.html">
-                        <button class="exclude-accessibility BonW">En savoir plus</button>
+                        <button class="exclude-accessibility BonW" data-i18n="more_info">En savoir plus</button>
                     </a>
                 </div>
             </div>
@@ -203,40 +202,40 @@
     <!-- section thématique -->
 
     <section class="thematique">
-        <h1>Nos <span class="color_v">thématiques</span></h1>
+        <h1 data_i18n="themes">Nos <span class="color_v">thématiques</span></h1>
         <div class="container">
             <div class="line d-flex justify-content-between">
                 <div class="theme_box mg_r mg_b exclude-accessibility BonW">
                     <div class="top d-flex justify-content-between">
                         <div class="title">
-                            <h4 class="exclude-accessibility text">Bases d'Internet</h4>
+                            <h4 class="exclude-accessibility text" data_i18n="description_internet">Bases d'Internet</h4>
                             <div class="underline title_underline internet exclude-accessibility"></div>
                         </div>
                         <img src="./assets/images/illustration/internet.png" alt="Illustration thématique internet">
                     </div>
 
                     <div class="bot">
-                        <p class="fs-5 exclude-accessibility text">
+                        <p class="fs-5 exclude-accessibility text" data_i18n="title_internet">
                             Vous retrouverez dans cette rubrique toutes les ressources qui vous aideront à acquérir toutes les bases d'Internet.
                         </p>
-                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-internet.php'">Consulter</button>
+                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-internet.php'" data_i18n="visit">Consulter</button>
                     </div>
                 </div>
 
                 <div class="theme_box exclude-accessibility BonW">
                     <div class="top d-flex justify-content-between">
                         <div class="title">
-                            <h4 class="exclude-accessibility text">Sécurité</h4>
+                            <h4 class="exclude-accessibility text" data_i18n="title_security">Sécurité</h4>
                             <div class="underline title_underline securite exclude-accessibility"></div>
                         </div>
                         <img src="./assets/images/illustration/sécurité.png" alt="Illustration thématique sécurité">
                     </div>
 
                     <div class="bot">
-                        <p class="fs-5 exclude-accessibility text">
+                        <p class="fs-5 exclude-accessibility text" data_i18n="description_security">
                             Vous retrouverez dans cette rubrique toutes les ressources qui vous aideront à garantir votre sécurité sur le web.
                         </p>
-                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-securite.php'">Consulter</button>
+                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-securite.php'" data_i18n="visit">Consulter</button>
                     </div>
                 </div>
             </div>
@@ -246,34 +245,34 @@
                 <div class="theme_box mg_r mg_b exclude-accessibility BonW">
                     <div class="top d-flex justify-content-between">
                         <div class="title">
-                            <h4 class="exclude-accessibility text">Administratif</h4>
+                            <h4 class="exclude-accessibility text" data_i18n="description_admin">Administratif</h4>
                             <div class="underline title_underline administratif exclude-accessibility"></div>
                         </div>
                         <img src="./assets/images/illustration/admin.png" alt="Illustration thématique administratif">
                     </div>
 
                     <div class="bot">
-                        <p class="fs-5 exclude-accessibility text">
+                        <p class="fs-5 exclude-accessibility text" data_i18n="title_admin">
                             Vous retrouverez dans cette rubrique toutes les ressources qui vous permettront de réussir vos démarches administratives.
                         </p>
-                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-administratif.php'">Consulter</button>
+                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-administratif.php'" data_i18n="visit">Consulter</button>
                     </div>
                 </div>
 
                 <div class="theme_box exclude-accessibility BonW">
                     <div class="top d-flex justify-content-between">
                         <div class="title">
-                            <h4 class="exclude-accessibility text">Éducation</h4>
+                            <h4 class="exclude-accessibility text" data_i18n="title_educ">Éducation</h4>
                             <div class="underline title_underline education exclude-accessibility"></div>
                         </div>
                         <img src="./assets/images/illustration/education.png" alt="Illustration thématique education">
                     </div>
 
                     <div class="bot">
-                        <p class="fs-5 exclude-accessibility text">
+                        <p class="fs-5 exclude-accessibility text" data_i18n="description_educ">
                             Vous retrouverez dans cette rubrique toutes les ressources en lien avec l'éducation en ligne.
                         </p>
-                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-education.php'">Consulter</button>
+                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-education.php'" data_i18n="visit">Consulter</button>
                     </div>
                 </div>
             </div>
@@ -283,34 +282,34 @@
                 <div class="theme_box mg_r mg_b exclude-accessibility BonW">
                     <div class="top d-flex justify-content-between">
                         <div class="title">
-                            <h4 class="exclude-accessibility text">Santé</h4>
+                            <h4 class="exclude-accessibility text" data_i18n="title_health">Santé</h4>
                             <div class="underline title_underline sante exclude-accessibility"></div>
                         </div>
                         <img src="./assets/images/illustration/santé.png" alt="Illustration thématique santé">
                     </div>
 
                     <div class="bot">
-                        <p class="fs-5 exclude-accessibility text">
+                        <p class="fs-5 exclude-accessibility text" data_i18n="description_health">
                             Vous retrouverez dans cette rubrique toutes les ressources en rapport avec la santé.
                         </p>
-                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-sante.php'">Consulter</button>
+                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-sante.php'" data_i18n="visit">Consulter</button>
                     </div>
                 </div>
 
                 <div class="theme_box exclude-accessibility BonW">
                     <div class="top d-flex justify-content-between">
                         <div class="title">
-                            <h4 class="exclude-accessibility text">Communication</h4>
+                            <h4 class="exclude-accessibility text" data_i18n="title_com">Communication</h4>
                             <div class="underline title_underline comm exclude-accessibility"></div>
                         </div>
                         <img src="./assets/images/illustration/communication.png" alt="Illustration thématique communication">
                     </div>
 
                     <div class="bot">
-                        <p class="fs-5 exclude-accessibility text">
+                        <p class="fs-5 exclude-accessibility text" data_i18n="description_com">
                             Vous retrouverez dans cette rubrique toutes les ressources qui vous aideront à communiquer en ligne.
                         </p>
-                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-communication.php'">Consulter</button>
+                        <button class="exclude-accessibility BonW" onclick="window.location.href='categorie-communication.php'" data_i18n="visit">Consulter</button>
                     </div>
                 </div>
             </div>
@@ -320,34 +319,34 @@
 
     <!-- section download -->
     <section class="download d-flex flex-column justify-content-center align-items-center">
-        <h2>Nos <span class="color_v">ressources téléchargeables</span></h2>
-        <p>Vous trouverez ci-dessous des ressources qui pourraient vous être pratiques.</p>
+        <h2 data_i18n="title_resources">Nos <span class="color_v">ressources téléchargeables</span></h2>
+        <p data_i18n="description_resources">Vous trouverez ci-dessous des ressources qui pourraient vous être pratiques.</p>
         <img src="./assets/images/illustration/ressources_téléchargeables.png" alt="Illustration ressources téléchargeables">
         <div class="container d-flex justify-content-center">
             
             <div class="download-box d-flex flex-column justify-content-center align-items-center exclude-accessibility">
-                <h4 class="color_v fw-bold exclude-accessibility text">Les formes de curseurs <i class="fa-solid fa-arrow-pointer fs-3 exclude-accessibility"></i></h4>
-                <p class="exclude-accessibility text">Vous trouverez dans ce PDF toutes les formes de curseurs dont vous avez besoin.</p>
-                <button class="downloadButton exclude-accessibility text BonW" data-filepath="./assets/pdf/Ressources/Curseurs.pdf" data-filename="Curseur.pdf">Télécharger le PDF</button>
+                <h4 class="color_v fw-bold exclude-accessibility text" data_i18n="crossair">Les formes de curseurs <i class="fa-solid fa-arrow-pointer fs-3 exclude-accessibility"></i></h4>
+                <p class="exclude-accessibility text" data_i18n="crossair_pdf">Vous trouverez dans ce PDF toutes les formes de curseurs dont vous avez besoin.</p>
+                <button class="downloadButton exclude-accessibility text BonW" data-filepath="./assets/pdf/Ressources/Curseurs.pdf" data-filename="Curseur.pdf" data-i18n="download_pdf">Télécharger le PDF</button>
             </div>
 
 
             <div class="download-box d-flex flex-column justify-content-center align-items-center exclude-accessibility">
-                <h4 class="color_v fw-bold exclude-accessibility text">Les extensions <i class="fa-solid fa-file-audio fs-3 exclude-accessibility"></i></h4>
-                <p class="exclude-accessibility text">Vous trouverez dans ce PDF toutes les extensions de fichier dont vous avez besoin.</p>
-                <button class="downloadButton exclude-accessibility text BonW" data-filepath="./assets/pdf/Ressources/Extensions.pdf" data-filename="Extensions.pdf">Télécharger le PDF</button>
+                <h4 class="color_v fw-bold exclude-accessibility text" data_i18n="extentions">Les extensions <i class="fa-solid fa-file-audio fs-3 exclude-accessibility"></i></h4>
+                <p class="exclude-accessibility text" data_i18n="extension_pdf">Vous trouverez dans ce PDF toutes les extensions de fichier dont vous avez besoin.</p>
+                <button class="downloadButton exclude-accessibility text BonW" data-filepath="./assets/pdf/Ressources/Extensions.pdf" data-filename="Extensions.pdf" data-i18n="download_pdf">Télécharger le PDF</button>
             </div>
 
             <div class="download-box d-flex flex-column justify-content-center align-items-center exclude-accessibility">
-                <h4 class="color_v fw-bold exclude-accessibility">Les raccourcis Mac <i class="fa-brands fa-apple fs-3 exclude-accessibility"></i></h4>
-                <p class="exclude-accessibility text">Vous trouverez dans ce PDF tous les raccourcis pour le système d'exploitation Mac.</p>
-                <button class="downloadButton exclude-accessibility text BonW" data-filepath="./assets/pdf/Ressources/Raccourcis_Mac.pdf" data-filename="Raccourcis Mac.pdf">Télécharger le PDF</button>
+                <h4 class="color_v fw-bold exclude-accessibility" data_i18n="mac_short_cut">Les raccourcis Mac <i class="fa-brands fa-apple fs-3 exclude-accessibility"></i></h4>
+                <p class="exclude-accessibility text" data-i18n="mac_pdf">Vous trouverez dans ce PDF tous les raccourcis pour le système d'exploitation Mac.</p>
+                <button class="downloadButton exclude-accessibility text BonW" data-filepath="./assets/pdf/Ressources/Raccourcis_Mac.pdf" data-filename="Raccourcis Mac.pdf" data-i18n="download_pdf">Télécharger le PDF</button>
             </div>
 
             <div class="download-box d-flex flex-column justify-content-center align-items-center exclude-accessibility">
-                <h4 class="color_v fw-bold exclude-accessibility text">Les raccourcis Windows <i class="fa-brands fa-windows fs-3 exclude-accessibility"></i></h4>
-                <p class="exclude-accessibility text">Vous trouverez dans ce PDF tous les raccourcis pour le système d'exploitation Windows.</p>
-                <button class="downloadButton exclude-accessibility text BonW" data-filepath="./assets/pdf/Ressources/Raccourcis_Windows.pdf" data-filename="Raccourcis Windows.pdf">Télécharger le PDF</button>
+                <h4 class="color_v fw-bold exclude-accessibility text" data_i18n="win_short_cut">Les raccourcis Windows <i class="fa-brands fa-windows fs-3 exclude-accessibility"></i></h4>
+                <p class="exclude-accessibility text" data-i18n="win_pdf">Vous trouverez dans ce PDF tous les raccourcis pour le système d'exploitation Windows.</p>
+                <button class="downloadButton exclude-accessibility text BonW" data-filepath="./assets/pdf/Ressources/Raccourcis_Windows.pdf" data-filename="Raccourcis Windows.pdf" data-i18n="download_pdf">Télécharger le PDF</button>
             </div>
         </div>
     </section>
